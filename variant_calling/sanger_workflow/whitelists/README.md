@@ -46,7 +46,7 @@ Note that \<compute_site\> must match the name of directory the whitelist is cur
 
 ### Content of whitelist
 
-Whitelists are plain text files. Each row is a donor that is uniquely identified by *dcc\_project\_code* and *submitter\_donor\_id*. These two fields are joined by double-colon '::', e.g., PRAD-UK::0065\_CRUK\_PC\_0065
+Whitelists are plain text files. Each row is a donor that is uniquely identified by *dcc\_project\_code* and *submitter\_donor\_id*. These two fields are joined by a tab '\t', e.g., PRAD-UK  0065\_CRUK\_PC\_0065
 
 ### Rules for creating / maintaining whitelists
 
