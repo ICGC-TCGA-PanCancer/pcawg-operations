@@ -39,7 +39,7 @@ Each directory under *whitelists* is named after the compute site, it contains w
 
 A whitelist file must follow the following naming convention:
 ```
-<compute_site>.<yymmdd-hhmm>.[optional text as comments.]<txt>
+<compute_site>.<yymmdd-hhmm>.[optional text as comments<.>]<txt>
 ```
 
 Note that \<compute_site\> must match the name of directory the whitelist is currently under.
