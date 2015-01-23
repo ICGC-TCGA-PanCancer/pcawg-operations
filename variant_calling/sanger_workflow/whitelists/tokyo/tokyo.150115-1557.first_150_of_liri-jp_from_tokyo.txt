@@ -1,5 +1,3 @@
-# both_aligned
-# dcc_project_code	submitter_donor_id
 LIRI-JP	RK001
 LIRI-JP	RK002
 LIRI-JP	RK003
