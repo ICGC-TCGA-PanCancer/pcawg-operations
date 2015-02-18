@@ -1,4 +1,8 @@
 #!/usr/bin/perl -w
+
+# A script to tag and release the pcawg_operations repo
+# once daily unsing the github API.  Called by update_blacklist.sh
+
 use common::sense;
 use Net::GitHub;
 use Data::Dumper;
