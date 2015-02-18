@@ -58,7 +58,7 @@ git push
 
 # use the github API to tag and release the new blacklist
 time_stamp=$(date '+20%y-%m-%d')
-/home/ubuntu/sheldon/release.pl $time_stamp
+/home/ubuntu/blacklist/release.pl $time_stamp
 
 
 
