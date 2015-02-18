@@ -2,10 +2,12 @@
 # A cron script to update the Sanger variant calling blacklist once daily
 
 # Find the gnos_repo_summary
-time_stamp=$(date '+20%y-%m-%d_03-01-')
+time_stamp=$(date '+20%y-%m-%d')
 paths=/mnt/data/pancancer-sandbox/pcawg_metadata_parser/gnos_metadata/${time_stamp}*UTC/reports/gnos_repo_summary
 len=${#paths[@]}
+
 last=$((len - 1)) 
+echo $paths
 path=${paths[$last]}
 
 if [[ ! -n $path ]] 
@@ -18,7 +20,6 @@ cd $path
 pwd=$(pwd);
 echo in path $pwd
 
-
 time_stamp=$(date '+%y%m%d-%H%M')
 cat live_sanger_variant_called_donors.*.txt > _all_sites.$time_stamp.sanger_variant_called_donors.txt
 
@@ -29,6 +30,7 @@ export PATH=${PATH}:/usr/local/bin
 cd /mnt/data/
 rm -fr pcawg-operations
 git clone git@github.com:ICGC-TCGA-PanCancer/pcawg-operations.git
+#git clone git@github.com:mckays630/pcawg-operations.git  
 cd $path
 
 mv _all_sites.$time_stamp.sanger_variant_called_donors.txt \
