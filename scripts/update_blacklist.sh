@@ -18,7 +18,17 @@ fi
 echo switching to path $path
 cd $path
 pwd=$(pwd);
+
+if [[ ! "$path" == "$pwd" ]]
+then
+    echo "ERROR: we have no metadata path!"
+    echo path|${path}|
+    echo -pwd|${pwd}|
+    exit 1
+fi
+
 echo in path $pwd
+
 
 time_stamp=$(date '+%y%m%d-%H%M')
 cat live_sanger_variant_called_donors.*.txt > _all_sites.$time_stamp.sanger_variant_called_donors.txt
