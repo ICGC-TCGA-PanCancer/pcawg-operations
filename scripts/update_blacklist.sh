@@ -39,7 +39,7 @@ echo The new file has $list lines
 export PATH=${PATH}:/usr/local/bin
 cd /mnt/data/
 rm -fr pcawg-operations
-git clone git@github.com:ICGC-TCGA-PanCancer/pcawg-operations.git
+git clone git@github.com:ICGC-TCGA-PaCancer/pcawg-operations.git
 #git clone git@github.com:mckays630/pcawg-operations.git  
 cd $path
 
@@ -49,10 +49,10 @@ mv _all_sites.$time_stamp.sanger_variant_called_donors.txt \
 cd /mnt/data/pcawg-operations/variant_calling/sanger_workflow/blacklists/_all_sites
 
 cat _all_sites.$time_stamp.sanger_variant_called_donors.txt \
-    annotation.150127-0715.alignment_failed_qc.txt \
-    annotation.150127-0716.alignment_failed_manual_curation.txt \
+    annotation.150226-0955.DE_wrong_quality_score.txt \
+    annotation.150226-1002.alignment_failed_manual_curation.txt \
+    annotation.150226-1003.alignment_failed_qc.txt \
     pdc1_1.150114-2103.pilot-63.txt | sort | uniq \
-    |grep -vP 'CLLE-ES\s+283' \
     > _all_sites.$time_stamp.merged_called-donors-pilot63-annotation.txt
 
 ln -s -f  _all_sites.$time_stamp.merged_called-donors-pilot63-annotation.txt \
