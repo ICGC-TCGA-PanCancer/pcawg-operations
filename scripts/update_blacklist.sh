@@ -52,6 +52,7 @@ cat _all_sites.$time_stamp.sanger_variant_called_donors.txt \
     annotation.150226-0955.DE_wrong_quality_score.txt \
     annotation.150226-1002.alignment_failed_manual_curation.txt \
     annotation.150226-1003.alignment_failed_qc.txt \
+    annotation.150304-1202.slashes_in_names.txt \
     pdc1_1.150114-2103.pilot-63.txt | sort | uniq \
     > _all_sites.$time_stamp.merged_called-donors-pilot63-annotation.txt
 
