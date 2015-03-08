@@ -123,12 +123,7 @@ BOCA-UK::CGP_donor_1691121	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis
 PACA-AU::ICGC_0066	https://gtrepo-osdc-icgc.annailabs.com/cghub/data/analysis/download/089c7afd-1eb0-4bd1-82da-104deded5acf
 PBCA-DE::ICGC_MB39	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/e88e7afe-08b1-46ae-903a-a122394e4bfe
 PBCA-DE::ICGC_MB38	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/83b4fffb-29b6-49d9-aab1-c9420547fe5b
-PBCA-DE::ICGC_MB31	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/dbdbe2cb-6665-457f-bb75-b5a61a453609
 PBCA-DE::ICGC_MB32	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/f064cc2e-d8b3-4f74-97c3-f0b8202db7a9
-PBCA-DE::ICGC_MB35	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/87985f56-8ba1-44ec-97ae-bdaa79a2bc3e
-PBCA-DE::ICGC_MB34	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/1e0bb70c-68fc-4200-8975-0ab8db756113
-PBCA-DE::ICGC_MB37	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/2860fd99-1977-4b5c-89d2-e11c81f21d86
-PBCA-DE::ICGC_MB36	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/21494709-c60c-4893-b713-f58fea2658e2
 PBCA-DE::ICGC_MB199	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/137fa7b0-583b-4c8e-81ee-4f37ba1d5914
 PBCA-DE::ICGC_MB198	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/a2ba2db3-cbce-4b9a-967b-4f594f9b1585
 PRAD-UK::0070_CRUK_PC_0070	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/66c5fdfa-530d-45dc-bfd5-babd26c68a4a
