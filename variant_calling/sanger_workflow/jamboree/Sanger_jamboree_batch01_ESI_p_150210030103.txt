@@ -380,7 +380,6 @@ BRCA-EU::CGP_donor_1475200	https://gtrepo-ebi.annailabs.com/cghub/data/analysis/
 BRCA-EU::CGP_donor_1475201	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/22e10b0b-6146-4362-b168-86e0aca1ad9f
 PACA-AU::ICGC_0052	https://gtrepo-osdc-icgc.annailabs.com/cghub/data/analysis/download/3174fe50-6673-4934-908e-8b0e4daf5edd
 PACA-AU::ICGC_0053	https://gtrepo-osdc-icgc.annailabs.com/cghub/data/analysis/download/d0ccba25-41cc-449b-b9d7-f1dcd5ec8506
-CESC-US::0809ba8b-4ab6-4f43-934c-c1ccbc014a7e	https://gtrepo-osdc-tcga.annailabs.com/cghub/data/analysis/download/15c21239-5a95-4cac-b5b3-1a20a9f02b92
 MALY-DE::4104893	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/9ec73266-c648-4497-a4fa-314e4b228955
 PBCA-DE::ICGC_MB111	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/bf7de244-afb3-45e4-b5a4-cd42fd031775
 PBCA-DE::ICGC_MB110	https://gtrepo-dkfz.annailabs.com/cghub/data/analysis/download/40571b0e-37d4-4f15-89ea-98e78b1b69d1
