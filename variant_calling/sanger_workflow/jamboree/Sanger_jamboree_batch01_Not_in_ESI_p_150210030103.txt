@@ -1,4 +1,0 @@
-CESC-US::14c65927-b9dd-4ef6-9917-db7bc431ff2f	https://gtrepo-osdc-tcga.annailabs.com/cghub/data/analysis/download/dc8f427d-d224-4557-8bc1-76352aa20fc5
-COAD-US::0cb0dac8-4ce2-444a-b1ae-1550e065b4d9	https://gtrepo-osdc-tcga.annailabs.com/cghub/data/analysis/download/f200bddb-86a1-4d23-bd01-903d35f02e01
-LUSC-US::0398eae1-7216-4595-80a5-6b117d96e070	https://gtrepo-osdc-tcga.annailabs.com/cghub/data/analysis/download/867316ea-3a96-4040-91b9-cd47a3e51058
-STAD-US::1ca3c5e0-32b0-4467-8ec0-ca212e35d2b3	https://gtrepo-osdc-tcga.annailabs.com/cghub/data/analysis/download/27a6de19-ca44-42fe-8551-546083fffa17
