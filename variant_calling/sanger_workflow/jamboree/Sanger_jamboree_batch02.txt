@@ -392,7 +392,7 @@ HNSC-US::1f744ada-6de1-446d-b62c-76a7fc8b40af	https://gtrepo-osdc-tcga.annailabs
 GBM-US::6e6962d8-34b8-431c-8220-42b0b92a410b	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/e06d20ac-1062-4224-a8e6-95473002a744	7163a0f7-2c69-40b8-8857-8ab3f46f0acf
 BRCA-US::1174f6e4-ffbe-4e59-a000-8d861c968369	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/e1f02fac-de22-4806-9bfa-13360d48c269	8f558713-f32b-403b-aedf-c79efeb41c67
 COAD-US::84959e50-17f5-4f2b-8e0c-5ebb139d2c3a	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/e30c1844-81b3-4c89-b4f8-a16192519785	31e63f89-a6a9-40fb-823d-f41587bd73d8
-PRAD-UK::0075_CRUK_PC_0075	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/e5ee0e9b-6525-42fe-9c59-73442aa9fcf2	f9c4e06c-e8a6-613b-e040-11ac0d4828ba
+PRAD-UK::0075_CRUK_PC_0075	https://gtrepo-bsc.annailabs.com/cghub/metadata/analysisFull/e5ee0e9b-6525-42fe-9c59-73442aa9fcf5	f9c4e06c-e8a6-613b-e040-11ac0d4828ba
 BRCA-US::4da999a0-ef41-4a0b-b1d1-446b39cc855a	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/e7f91a92-8bff-46c3-a8c2-8788aff1e84f	df291849-4c35-44e1-b013-8f6b7ee36113
 BRCA-US::49717f75-0f2d-4e1c-9a12-f1cd7877b80a	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/ed02b786-020b-4013-b5ef-97ff71125594	25c76a8f-77c0-4650-bddf-45ed0c10a2e6
 COAD-US::f87c6dcc-1a9e-4df5-962c-1f946e2611f8	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/ed5374ec-003e-4246-acf6-f5ee6f68d3d2	75ad15b9-8f9c-40c1-9ca6-1e8454fbd310
