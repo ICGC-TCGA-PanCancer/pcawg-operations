@@ -9,6 +9,7 @@ STAD-US::c3cba26e-38c2-4569-afd6-6b045e604808	https://gtrepo-osdc-tcga.annailabs
 LICA-FR::CHC205	https://gtrepo-bsc.annailabs.com/cghub/metadata/analysisFull/eef8ae8c-3c94-41d3-ad4d-d0e57a84480d	7eb0ee38-fbe2-49ea-ba63-aa13825eca6e
 STAD-US::8a24f1a3-4bab-4591-9676-7bee01d096c1	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/1556003b-c76d-4360-8e67-fa3fef82903e	2c316b7e-6a82-4ba1-9f34-d8bfcf82d41e
 CMDI-UK::CGP_donor_1337944	https://gtrepo-bsc.annailabs.com/cghub/metadata/analysisFull/9c97421c-7740-4471-ab31-49eaa9138b24	f8f0136b-09ec-d079-e040-11ac0c4842e7,f8e61a02-938b-9428-e040-11ac0d481b6c
+GBM-US::6c5154d2-af36-492f-b520-d925528824e4	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/a5dd96a6-b54f-407f-a170-cac6f86d1c68	65723119-bdfe-46f0-b629-c171023abd71
 STAD-US::b8a1c8c7-3945-4d84-8f58-3a1a1eb10730	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/53a6ca69-e425-4573-8d47-90209ad3615c	6a7cdaf6-211e-4eb8-a70e-1153d69c45e4
 LUSC-US::7d3e77cc-9603-4722-8e39-1912b678871b	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/c0e3bd5c-946e-4892-ad7e-9a9e87c65ed0	692dfa4f-45e5-4183-b5da-6650a1fbcabd
 CMDI-UK::CGP_donor_1405305	https://gtrepo-bsc.annailabs.com/cghub/metadata/analysisFull/69f1e8ab-2cab-4c66-806a-4b003eb036a1	f90b298a-0546-6c36-e040-11ac0c487a0b,f901c7f7-891e-8ec1-e040-11ac0c480829

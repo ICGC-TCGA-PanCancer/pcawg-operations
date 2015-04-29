@@ -695,3 +695,5 @@ LIHC-US::06ac44e9-1226-4202-828b-6f224766d7ac	https://gtrepo-osdc-tcga.annailabs
 PACA-CA::PCSI_0449	https://gtrepo-ebi.annailabs.com/cghub/metadata/analysisFull/1369afd9-16d4-45da-bc86-8353813f1a2b	6500aa9e-c5b5-40ec-9cce-7e6fd2eca401
 LIHC-US::69d6881b-9e9a-407b-8b02-bad5fc2455bf	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/260ce6af-e240-4dfd-b1b2-610605738ed5	4cff8590-559e-4204-8635-96e11bfeda68
 LIHC-US::3acf7438-fd65-442c-8a30-68b6714537f3	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/60268a71-0ff8-48f2-9f36-5cfa07251729	c016d025-3c92-41c5-b846-493b1fcce79e
+LIHC-US::b865dec4-f051-4fbe-9405-f832ff2010d7	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/ea4edea8-88df-45cf-959d-7b9fb52bf4d8	c05adc19-2e01-4712-a35a-69eee4d40998
+KICH-US::03f3dd32-e1d1-485b-a968-3f55798f4d46	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/a124c38b-ec1b-4ce3-bd78-3d34c6f7fd6a	4729fe4b-c1ac-489b-a67e-91e5c5e3ff8c
