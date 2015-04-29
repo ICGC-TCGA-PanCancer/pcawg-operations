@@ -419,7 +419,6 @@ UCEC-US::8d9e4917-334b-4c76-aee1-1e22be772db0	https://gtrepo-osdc-tcga.annailabs
 LUAD-US::dbd5b0de-94c9-45dd-afb3-6820a7ecaca2	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/01a3a7e1-9c2f-447b-a0f9-9dbc8797603e	68c2a355-862c-4657-b296-5776ed8447b0
 SKCM-US::a01a350d-64be-4af3-91c3-7d681c3db11d	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/a1b76113-c871-4bcd-ae17-afcc95ef3431	d056645f-4dd3-49f3-b0a4-2293e2b4d82c
 UCEC-US::71fed998-8fac-4e6b-b38a-22c83e05e958	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/aef7d4d7-a9b6-4dbf-b0a6-75df9cb55264	577d5c9e-fbda-41d5-b0b3-cdb733453ea5
-LIHC-US::b865dec4-f051-4fbe-9405-f832ff2010d7	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/f79ab022-02ae-4133-a8e1-e673583e9479	c05adc19-2e01-4712-a35a-69eee4d40998
 KIRP-US::0c151271-2cf9-43f4-9e9b-fe927de43131	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/54bee1c4-ddad-4bff-875c-2683c9652bc6	e1217ebe-1826-41a9-b6c4-702100a66f5e
 LIHC-US::0ff6364a-e6f4-47ca-a7e7-14705bf0a8df	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/a8b08573-c4d6-4ab0-b4bd-1bf8bc555d27	4c3eda94-56f4-46d3-8c88-50d476e773f6
 LUAD-US::4c31127e-d095-4978-9dac-35153c27f6ed	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/01aa06a3-872f-4561-b083-aacb11d48182	9ffcb7fa-424c-4f93-87a7-ce5e9053c613
@@ -552,7 +551,6 @@ LIHC-US::6dcfc418-ab28-4365-95ea-c1ae254f2341	https://gtrepo-osdc-tcga.annailabs
 COAD-US::84e34cf2-b3bb-4a1a-8fb7-6c2c604c4008	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/94030cd2-8104-401b-bc84-5a9e769773dd	a64000df-16e5-4b88-865f-5c680adf60eb
 UCEC-US::a587e62e-430e-4f1b-82b7-6fbe856fdaf1	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/595fadd9-0d2b-4ec5-955b-eac9e12bb6f2	23cc70c4-b744-4fa0-a0de-b25c0fdf212f
 GBM-US::5c984433-33cf-42fc-b3ba-511efcdcab19	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/fb76376d-4f8a-494c-967a-78a4691edcdc	3914c02e-44ad-4c96-8464-61aa95b42c49
-KICH-US::03f3dd32-e1d1-485b-a968-3f55798f4d46	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/2eb4b900-6846-45ff-a336-190667c847c7	4729fe4b-c1ac-489b-a67e-91e5c5e3ff8c
 ORCA-IN::OSCC-GB_012401	https://gtrepo-riken.annailabs.com/cghub/metadata/analysisFull/7e9d536f-f3d7-443d-961e-fbb3150df5bf	1fdab6a6-7346-4229-aa8d-5dbd258f0c60
 THCA-US::2f59f12d-ca0c-4ac6-9718-98a6d455af46	https://gtrepo-osdc-tcga.annailabs.com/cghub/metadata/analysisFull/22d78bd4-9990-462d-b12e-ba78f3470c3d	b8cd6882-be27-4742-bc63-3227d31bf704
 PAEN-AU::ITNET-1047	https://gtrepo-osdc-icgc.annailabs.com/cghub/metadata/analysisFull/160e3dc3-f07f-4c04-ba78-c000f978ea2e	6e776415-ddf4-4060-953f-08ef22441234
