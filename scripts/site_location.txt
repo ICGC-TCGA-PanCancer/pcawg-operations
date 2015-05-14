@@ -1,0 +1,14 @@
+aws_ireland	AWS Ireland
+aws_oregon	AWS Oregon
+bsc	Barcelona
+dkfz	Heidelberg
+ebi	London
+etri	Seoul
+idash	San Diego
+oicr	Toronto
+pdc1_1	Chicago
+pdc2_0	Chicago
+sanger	Cambridge
+tokyo	Tokyo
+ucsc	Santa Cruz
+
