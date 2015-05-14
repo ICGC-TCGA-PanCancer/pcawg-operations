@@ -5,7 +5,7 @@ dkfz	Heidelberg
 ebi	London
 etri	Seoul
 idash	San Diego
-oicr	Toronto
+OICR	Toronto
 pdc1_1	Chicago
 pdc2_0	Chicago
 sanger	Cambridge
