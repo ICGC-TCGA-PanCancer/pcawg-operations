@@ -2,6 +2,7 @@ aws_ireland	AWS Ireland
 aws_oregon	AWS Oregon
 bsc	Barcelona
 dkfz	Heidelberg
+dkfz_hpc	Heidelberg HPC
 ebi	London
 etri	Seoul
 idash	San Diego
