@@ -30,6 +30,7 @@ def main():
         GetS3TopLevel(bucket)
         conn.close()
     except Exception as e:
+        logging.error(str(e)+"\n\n")
         sys.stderr.write(str(e)+"\n\n")
         sys.stderr.write("Error interfacing with S3.\n")
         sys.exit(1)
