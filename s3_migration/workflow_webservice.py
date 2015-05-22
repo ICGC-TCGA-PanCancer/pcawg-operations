@@ -2,6 +2,10 @@
 
 # Redirect behind apache
 
+# TO REPORT WORKFLOW SUCCESS OR FAILURE:
+# curl pancancer.info/someurl/success/analysisID
+# curl pancancer.info/someurl/failure/analysisID
+
 import logging
 import sqlite3
 import BaseHTTPServer
