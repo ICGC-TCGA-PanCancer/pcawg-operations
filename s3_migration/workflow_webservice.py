@@ -2,15 +2,16 @@
 
 # Redirect behind apache
 
+# Added query strings to support the fields Junjun has requested in Jira Ticket: https://jira.oicr.on.ca/browse/PANCANCER-702
 # TO REPORT WORKFLOW SUCCESS OR FAILURE:
-# curl pancancer.info/someurl/success/analysisID
-# curl pancancer.info/someurl/failure/analysisID
+# curl pancancer.info/:virtualhost?action=[ success/fail/dump ]workflow=[ workflow name ]&gnos=[ gnos location ]&date=[ date in unix format ]&analysisID=[ analysis ID in question]
 
 import logging
 import sqlite3
 import BaseHTTPServer
 import time
 import uuid
+import urlparse
 import os
 
 PORT_NUMBER=10101
@@ -22,45 +23,51 @@ def SetupLogging(filename,level=logging.INFO):
 
 class StoreAndForward(object):
     """ Database Interface Class. """
-    def __init__(self, filename="store-and-forward.db"):
+    def __init__(self, filename="workflow_runs.db"):
         if not os.path.exists(filename):
-            logging.info("Creating database: %f" % filename)
+            logging.info("Creating database: %s" % filename)
             conn = sqlite3.connect(filename)
             c = conn.cursor()
-            c.execute("CREATE TABLE SUCCESS(analysisID CHAR(36));")
-            c.execute("CREATE TABLE FAILURE(analysisID CHAR(36));")
+            c.execute("CREATE TABLE SUCCESS(analysisID CHAR(36), "
+                      "workflow TEXT, "
+                      "gnos TEXT, "
+                      "date TEXT);")
             c.close()
             conn.commit()
             conn.close()
         self.filename=filename
-    def success(self, uuid):
+    def success(self, query):
+        uuid = query['uuid'][0]
+        workflow = query['workflow'][0]
+        gnos = query['gnos'][0]
+        date = query['date'][0]
         logging.info("Insertion into SUCCESS: %s" % (uuid))
         conn = sqlite3.connect(self.filename)
         c = conn.cursor()
-        c.execute("INSERT INTO SUCCESS (analysisID) VALUES ('%s');" % (uuid))
-        c.execute("DELETE FROM FAILURE WHERE 'analysisID'='%s';" % (uuid))
+        c.execute("INSERT INTO SUCCESS (workflow, analysisID, date, gnos) VALUES ('%s','%s','%s','%s');" % (workflow, uuid, date, gnos))
         c.close()
         conn.commit()
         conn.close()
-    def fail(self, uuid):
+    def fail(self, query):
+        uuid = query['uuid'][0]
+        workflow = query['workflow'][0]
         logging.info("Insertion into FAILURE: %s" % (uuid))
         conn = sqlite3.connect(self.filename)
         c = conn.cursor()
-        c.execute("INSERT INTO FAILURE ('analysisID') VALUES ('%s');" % (uuid))
-        c.execute("DELETE FROM SUCCESS WHERE 'analysisID'='%s';" % (uuid))
+        c.execute("DELETE FROM SUCCESS WHERE workflow='%s' AND analysisID='%s';" % (workflow, uuid))
         c.close()
         conn.commit()
         conn.close()
-    def dump(self):
-        logging.info("Dumping database results: %s" % (uuid))
+    def dump(self, query):
+        workflow = query['workflow'][0]
+        logging.info("Dumping database results: %s" % (workflow))
+        results = ""
         conn = sqlite3.connect(self.filename)
         c = conn.cursor()
-        results = "\nSUCCESS:" 
-        for row in c.execute('SELECT * FROM SUCCESS'):
-            results = results + "\n%s" % (row)
-        results += "\n\nFAIL:" 
-        for row in c.execute('SELECT * FROM FAILURE'):
-            results = results + "\n%s" % (row)    
+        for row in c.execute("SELECT * FROM SUCCESS WHERE workflow='%s'" % (workflow)):
+            for col in row:
+                results += "%s\t" % ( str(col) )
+            results += "\n"
         c.close()
         conn.close()
         return results
@@ -76,26 +83,41 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         s.send_response(200)
         s.send_header("Content-type", "text/plain")
         s.end_headers()
-        s.wfile.write("Path: %s\n" % (s.path))
-        if len(s.path.split("/")) == 2:
-            route = s.path.split("/")[1]
-            uuid = ""
-        else:
-            route, uuid = s.path.split("/")[1], s.path.split("/")[2]
-        s.wfile.write("Route: %s\n" % (route))
-        HandleRoute(route, uuid, s)
+        parsed = urlparse.urlparse(s.path)
+        query = urlparse.parse_qs(parsed.query)
+ 
+        if 'action' not in query:
+            s.wfile.write("Improperly formatted url.\n")
+            return
         
-def HandleRoute(route, uuid, s):
+        if query['action'][0] == 'dump':
+            if query['workflow'] != '':
+                HandleRoute('dump', query, s)
+        elif 'uuid' not in query or 'workflow' not in query or 'uuid' not in query or 'gnos' not in query:
+            s.wfile.write("Improperly formatted url.\n")
+            return
+        elif not validUUID(query['uuid'][0] ):
+            s.wfile.write("Improperly formatted UUID.\n")
+            return
+        elif query['action'][0] == 'success':
+            if (query['workflow'][0] != '' and query['uuid'][0] != ''
+                and query['date'][0] != '' and query['gnos'][0] != ''):
+                HandleRoute('success', query, s)
+        elif query['action'][0] == 'fail':
+            if (query['workflow'][0] != '' and query['uuid'][0] != ''
+                and query['date'][0] != '' and query['gnos'][0] != ''):
+                HandleRoute('fail', query, s)
+        
+def HandleRoute(route, query, s):
     """ Routing for the listener. """
     if route == "success":
-        if validUUID(uuid):
-            db.success(uuid)
+        db.success(query)
+        s.wfile.write("ok")
     if route == "fail":
-        if validUUID(uuid):
-            db.fail(uuid)
+        db.fail(query)
+        s.wfile.write("ok")
     if route == "dump":
-        s.wfile.write("\nDATABASE DUMP")
-        s.wfile.write("%s" % (db.dump()))
+        s.wfile.write("%s" % (db.dump(query)))
         
 def validUUID(uuid_string):
     """ Validate a UUID. """
