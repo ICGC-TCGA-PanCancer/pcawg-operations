@@ -13,5 +13,5 @@ This webservice will process reports from store-and-forward workflows to track p
 
 ####Start the Webservice:
 `sudo useradd -r -s /bin/false s3migration`<br>
-`sudo cp /s3_migration /`<br>
+`sudo cp /home/ubuntu/gitroot/pcawg-operations/s3_migration/s3migration.service /etc/init.d/s3migration`<br>
 <br>
