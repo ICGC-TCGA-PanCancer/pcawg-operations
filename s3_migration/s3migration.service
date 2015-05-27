@@ -23,7 +23,7 @@ fi
 # The following variables can be overwritten in $DEFAULT
 
 # Run Elasticsearch as this user ID and group ID
-S3_USER=s3migratoin
+S3_USER=s3migration
 S3_GROUP=s3migration
 
 # Define other required variables
