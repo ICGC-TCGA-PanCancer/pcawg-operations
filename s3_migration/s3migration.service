@@ -28,7 +28,7 @@ S3_GROUP=s3migration
 
 # Define other required variables
 PID_FILE=/var/run/$NAME.pid
-DAEMON="/usr/bin/python /home/ubuntu/gitroot/pcwawg-operations/s3_migration/workflow_webservice.py"
+DAEMON="/usr/bin/python /home/ubuntu/gitroot/pcawg-operations/s3_migration/workflow_webservice.py"
 
 case "$1" in
   start)
