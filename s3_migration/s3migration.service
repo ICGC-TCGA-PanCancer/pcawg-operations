@@ -29,7 +29,7 @@ S3_GROUP=s3migration
 
 # Define other required variables
 PID_FILE=/var/run/$NAME.pid
-DAEMON="/usr/bin/python /home/ubuntu/gitroot/pcawg-operations/s3_migration/workflow_webservice.py 1> webservice.stdout 2> webservice.stderr"
+DAEMON="/usr/bin/python /home/ubuntu/gitroot/pcawg-operations/s3_migration/workflow_webservice.py"
 
 case "$1" in
   start)
@@ -46,8 +46,7 @@ case "$1" in
 	# Start Daemon
 	mkdir $RUNDIR 2> /dev/null
 	sudo chown $S3_USER:$S3_USER $RUNDIR
-	cd $RUNDIR
-	start-stop-daemon --start -b --user "$S3_USER" -c "$S3_USER" --pidfile "$PID_FILE" --exec $DAEMON
+	start-stop-daemon --start -d $RUNDIR -b --user "$S3_USER" -c "$S3_USER" --pidfile "$PID_FILE" --exec $DAEMON
 	log_end_msg $?
 	;;		
   stop)
