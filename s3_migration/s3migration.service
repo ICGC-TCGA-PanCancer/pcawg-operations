@@ -6,6 +6,7 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin
 NAME=s3migration
 DESC="s3migration Server"
 DEFAULT=/etc/default/$NAME
+RUNDIR=/home/ubuntu/webservice
 
 if [ `id -u` -ne 0 ]; then
 	echo "You need root privileges to run this script"
@@ -28,7 +29,7 @@ S3_GROUP=s3migration
 
 # Define other required variables
 PID_FILE=/var/run/$NAME.pid
-DAEMON="/usr/bin/python /home/ubuntu/gitroot/pcawg-operations/s3_migration/workflow_webservice.py"
+DAEMON="/usr/bin/python /home/ubuntu/gitroot/pcawg-operations/s3_migration/workflow_webservice.py 1> webservice.stdout 2> webservice.stderr"
 
 case "$1" in
   start)
@@ -43,6 +44,9 @@ case "$1" in
 	fi
 
 	# Start Daemon
+	mkdir $RUNDIR 2> /dev/null
+	sudo chown $S3_USER:$S3_USER $RUNDIR
+	cd $RUNDIR
 	start-stop-daemon --start -b --user "$S3_USER" -c "$S3_USER" --pidfile "$PID_FILE" --exec $DAEMON
 	log_end_msg $?
 	;;		
