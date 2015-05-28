@@ -9,7 +9,7 @@ This webservice will process reports from store-and-forward workflows to track p
 `sudo cp /home/ubuntu/gitroot/pcawg-operations/s3_migration/apache.config /etc/apache2/sites-available/default`<br>
 `sudo a2enmod proxy`<br>
 Take a minute now and enable the proxy and ssl modules in:<br>
-/etc/apache2/mods-enabled (symlinks to /etc/apache2/mods-availble)<br>
+/etc/apache2/mods-enabled (symlinks to /etc/apache2/mods-available)<br>
 `sudo service apache2 restart`<br>
 
 
