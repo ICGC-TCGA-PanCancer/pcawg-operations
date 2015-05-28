@@ -10,7 +10,7 @@ This webservice will process reports from store-and-forward workflows to track p
 `sudo a2enmod proxy`<br>
 Take a minute now and enable the proxy and ssl modules in:<br>
 /etc/apache2/mods-enabled (symlinks to /etc/apache2/mods-available)<br>
-** Get a hold of the server.pem/server.key files and put them in /home/ubuntu/.ssh **
+**Get a hold of the server.pem/server.key files and put them in /home/ubuntu/.ssh<br>
 `sudo service apache2 restart`<br>
 
 
