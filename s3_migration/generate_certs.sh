@@ -1,9 +1,17 @@
 #!/bin/bash
 
+if [[ -z $1 ]]; then
+  echo "Provide a serial id."
+  exit 1
+fi
+
 #Simple Helper script to Generate a client and server set of pems.
 
 # ROOT
 openssl req -out ca.pem -new -x509 
+
+# SERIAL
+echo $1 > file.srl
 
 # SERVER
 openssl genrsa -out server.key 1024 
