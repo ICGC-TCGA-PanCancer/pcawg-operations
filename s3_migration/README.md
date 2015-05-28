@@ -8,6 +8,7 @@ This webservice will process reports from store-and-forward workflows to track p
 `git clone https://github.com/ICGC-TCGA-PanCancer/pcawg-operations.git`<br>
 `sudo cp /home/ubuntu/gitroot/pcawg-operations/s3_migration/apache.config /etc/apache2/sites-available/default`<br>
 `sudo a2enmod proxy`<br>
+Take a minute now and enable the proxy modules in /etc/apache2/mods-enabled (symlinks to /etc/apache2/mods-availble)<br>
 `sudo service apache2 restart`<br>
 
 
