@@ -1,0 +1,88 @@
+#!/bin/sh
+#
+# /etc/init.d/s3migration -- startup script for python webservice
+
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
+NAME=s3migration
+DESC="s3migration Server"
+DEFAULT=/etc/default/$NAME
+RUNDIR=/home/ubuntu/webservice
+
+if [ `id -u` -ne 0 ]; then
+	echo "You need root privileges to run this script"
+	exit 1
+fi
+
+
+. /lib/lsb/init-functions
+
+if [ -r /etc/default/rcS ]; then
+	. /etc/default/rcS
+fi
+
+
+# The following variables can be overwritten in $DEFAULT
+
+# Run Elasticsearch as this user ID and group ID
+S3_USER=s3migration
+S3_GROUP=s3migration
+
+# Define other required variables
+PID_FILE=/var/run/$NAME.pid
+DAEMON="/usr/bin/python /home/ubuntu/gitroot/pcawg-operations/s3_migration/workflow_webservice.py"
+
+case "$1" in
+  start)
+
+	log_daemon_msg "Starting $DESC"
+
+	pid=`pidofproc -p $PID_FILE s3migration`
+	if [ -n "$pid" ] ; then
+		log_begin_msg "Already running."
+		log_end_msg 0
+		exit 0
+	fi
+
+	# Start Daemon
+	mkdir $RUNDIR 2> /dev/null
+	sudo chown $S3_USER:$S3_USER $RUNDIR
+	start-stop-daemon --start -d $RUNDIR -b --user "$S3_USER" -c "$S3_USER" --pidfile "$PID_FILE" --exec $DAEMON
+	log_end_msg $?
+	;;		
+  stop)
+	log_daemon_msg "Stopping $DESC"
+
+	if [ -f "$PID_FILE" ]; then 
+		start-stop-daemon --stop --pidfile "$PID_FILE" \
+			--user "$S3_USER" \
+			--retry=TERM/20/KILL/5 >/dev/null
+		if [ $? -eq 1 ]; then
+			log_progress_msg "$DESC is not running but pid file exists, cleaning up"
+		elif [ $? -eq 3 ]; then
+			PID="`cat $PID_FILE`"
+			log_failure_msg "Failed to stop $DESC (pid $PID)"
+			exit 1
+		fi
+		rm -f "$PID_FILE"
+	else
+		log_progress_msg "(not running)"
+	fi
+	log_end_msg 0
+	;;
+  status)
+	status_of_proc -p $PID_FILE s3migration s3migration && exit 0 || exit $?
+    ;;
+  restart|force-reload)
+	if [ -f "$PID_FILE" ]; then
+		$0 stop
+		sleep 1
+	fi
+	$0 start
+	;;
+  *)
+	log_success_msg "Usage: $0 {start|stop|restart|force-reload|status}"
+	exit 1
+	;;
+esac
+
+exit 0
