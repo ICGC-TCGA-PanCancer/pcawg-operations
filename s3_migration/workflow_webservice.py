@@ -7,19 +7,31 @@
 # curl pancancer.info/:virtualhost?action=[ success/fail/dump ]workflow=[ workflow name ]&gnos=[ gnos location ]&date=[ date in unix format ]&analysisID=[ analysis ID in question]
 
 import logging
-import sqlite3
 import BaseHTTPServer
+import os
+import sqlite3
+import sys
 import time
 import uuid
 import urlparse
-import os
 
+
+# Constants
 PORT_NUMBER=10101
 HOST_NAME='127.0.0.1'
 
+
 def SetupLogging(filename,level=logging.INFO):
-    """ Logging Module Interface. """
+    """ Logging Module Interface.
+    Args:
+        filename:   The filename to log to.
+        level:      The logging level desired.
+    Returns:
+        None
+    """
     logging.basicConfig(filename=filename,level=level)
+    return None
+
 
 class StoreAndForward(object):
     """ Database Interface Class. """
@@ -36,7 +48,14 @@ class StoreAndForward(object):
             conn.commit()
             conn.close()
         self.filename=filename
+        
     def success(self, query):
+        """ Processes successful entries into the database. "
+        Args:
+            query:  The query string represented as a dictionary.
+        Returns:
+            None
+        """
         uuid = query['uuid'][0]
         workflow = query['workflow'][0]
         gnos = query['gnos'][0]
@@ -48,7 +67,14 @@ class StoreAndForward(object):
         c.close()
         conn.commit()
         conn.close()
+
     def fail(self, query):
+        """ Processes failed entries into the database.
+        Args:
+            query:  The query string represented as a dictionary.
+        Returns:
+            None
+        """
         uuid = query['uuid'][0]
         workflow = query['workflow'][0]
         logging.info("Insertion into FAILURE: %s" % (uuid))
@@ -58,7 +84,14 @@ class StoreAndForward(object):
         c.close()
         conn.commit()
         conn.close()
+
     def dump(self, query):
+        """ Dumps the complete output of the database, based on the query string.
+        Args:
+            query:  The query string represented as a dictionary.
+        Returns:
+            None
+        """
         workflow = query['workflow'][0]
         logging.info("Dumping database results: %s" % (workflow))
         results = ""
@@ -71,13 +104,16 @@ class StoreAndForward(object):
         c.close()
         conn.close()
         return results
+
     
 class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     """ Handler for the listener. """
+
     def do_HEAD(s):
          s.send_response(200)
          s.send_header("Content-type", "text/html")
          s.end_headers()
+
     def do_GET(s):
         """Respond to a GET request."""
         s.send_response(200)
@@ -87,13 +123,16 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         query = urlparse.parse_qs(parsed.query)
  
         if 'action' not in query:
+            print query
             s.wfile.write("Improperly formatted url.\n")
             return
         
         if query['action'][0] == 'dump':
+            print query
             if query['workflow'] != '':
                 HandleRoute('dump', query, s)
         elif 'uuid' not in query or 'workflow' not in query or 'uuid' not in query or 'gnos' not in query:
+            print query
             s.wfile.write("Improperly formatted url.\n")
             return
         elif not validUUID(query['uuid'][0] ):
@@ -107,9 +146,17 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             if (query['workflow'][0] != '' and query['uuid'][0] != ''
                 and query['date'][0] != '' and query['gnos'][0] != ''):
                 HandleRoute('fail', query, s)
+
         
 def HandleRoute(route, query, s):
-    """ Routing for the listener. """
+    """ Routing for the listener.
+    Args:
+        route:      A string indicating the route to process.
+        query:      The query string represented as a dictionary.
+        s:          The request object passed from webserver.
+    Returns:
+        None
+    """
     if route == "success":
         db.success(query)
         s.wfile.write("ok")
@@ -118,14 +165,21 @@ def HandleRoute(route, query, s):
         s.wfile.write("ok")
     if route == "dump":
         s.wfile.write("%s" % (db.dump(query)))
+
         
 def validUUID(uuid_string):
-    """ Validate a UUID. """
+    """ Validate a UUID.
+    Args:
+        uuid_string:    A uuid in string format.
+    Returns:
+        A boolean indicating validitiy.
+    """
     try:
         val = uuid.UUID(uuid_string, version=4)
     except ValueError:
         return False
     return True
+
 
 def main():
     print time.asctime(), "Server Starts - %s:%s" % (HOST_NAME, PORT_NUMBER)
