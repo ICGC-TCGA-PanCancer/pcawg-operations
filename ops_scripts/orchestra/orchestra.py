@@ -15,7 +15,14 @@ CACHEFILE = os.path.join(os.getenv("HOME"), ".orchestra_cache")
 SUBNET = os.path.join(os.getenv("HOME"), ".orchestra_subnet")
 
 
-def readsubnetfile:
+def parsefail():
+    """Simple help message when parsing the command arguments fails."""
+    print "Try: orchestra help\n\n"
+    sys.exit(1)
+
+
+def readsubnetfile():
+    """ Simple helper function that returns the contents of the subnet file. """
     with open(SUBNET) as f:
         data = f.read()
     return data
@@ -40,12 +47,6 @@ def RunCommand(cmd):
         print err
         print errcode
     return out, err, errcode
-
-
-def parsefail():
-    """Simple help message when parsing a command fails."""
-    print "Try: orchestra help\n\n"
-    sys.exit(1)
 
 
 def main():
