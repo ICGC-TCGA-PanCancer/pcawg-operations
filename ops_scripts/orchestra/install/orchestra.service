@@ -44,7 +44,7 @@ case "$1" in
 	fi
 
 	# Start Daemon
-	start-stop-daemon --start -d $RUNDIR -b --user "$ORCHESTRA_USER" -c "$ORCHESTRA_GROUP" --pidfile "$PID_FILE" --exec $DAEMON
+	start-stop-daemon --start -d $RUNDIR -b --user "$ORCHESTRA_USER" -c "$ORCHESTRA_GROUP" -m --pidfile "$PID_FILE" --exec $DAEMON
 	log_end_msg $?
 	;;
   stop)
@@ -52,7 +52,7 @@ case "$1" in
 
 	if [ -f "$PID_FILE" ]; then
 		start-stop-daemon --stop --pidfile "$PID_FILE" \
-			--user "$S3_USER" \
+			--user "$ORCHESTRA_USER" \
 			--retry=TERM/20/KILL/5 >/dev/null
 		if [ $? -eq 1 ]; then
 			log_progress_msg "$DESC is not running but pid file exists, cleaning up"

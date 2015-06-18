@@ -15,7 +15,7 @@ import urlparse
 # CONSTANTS
 DEBUG = False
 PORT_NUMBER = 9009
-HOST_NAME = '*'
+HOST_NAME = '0.0.0.0'
 LOGFILE = 'webservice.log'
 
 
