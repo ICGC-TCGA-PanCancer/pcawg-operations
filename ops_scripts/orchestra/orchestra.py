@@ -13,8 +13,13 @@ import urllib2
 # CONSTANTS
 CACHEFILE = os.path.join(os.getenv("HOME"), ".orchestra_cache")
 SUBNET = os.path.join(os.getenv("HOME"), ".orchestra_subnet")
-with open(SUBNET) as f:
-    SUBNET = f.read()
+
+
+def readsubnetfile:
+    with open(SUBNET) as f:
+        data = f.read()
+    return data
+
 
 def RunCommand(cmd):
     """ Execute a system call safely, and return output.
@@ -44,6 +49,7 @@ def parsefail():
 
 
 def main():
+    SUBNET = readsubnetfile()
     if sys.argv[1] == "list":
         with open(CACHEFILE, "w") as f:
             for ip in netaddr.IPNetwork(SUBNET):
@@ -73,6 +79,7 @@ def main():
         ini = sys.argv[3]
         print "NOT IMPLEMENTED YET"
     sys.exit(0)
+
 
 if __name__ == '__main__':
     if len(sys.argv) == 2:
