@@ -59,7 +59,7 @@ def main():
         with open(CACHEFILE) as f:
             targets = f.readlines()
         for ip in targets:
-            data = urllib2.urlopen("http://%s:9009/%s" % (ip, sys.argv[1]), timeout=5).read().strip()
+            data = urllib2.urlopen("http://%s:9009/busy" % ip, timeout=5).read().strip()
             if data == "TRUE" and sys.argv[1] == "busy":
                 print ip
             if data == "FALSE" and sys.argv[1] == "lazy":
