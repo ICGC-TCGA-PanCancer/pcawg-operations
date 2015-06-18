@@ -11,8 +11,8 @@ import urllib2
 
 
 # CONSTANTS
-CACHEFILE = os.path.join(os.getenv("HOME", ".orchestra_cache"))
-SUBNET = os.path.join(os.getenv("HOME", ".orchestra_subnet"))
+CACHEFILE = os.path.join(os.getenv("HOME"), ".orchestra_cache")
+SUBNET = os.path.join(os.getenv("HOME"), ".orchestra_subnet")
 with open(SUBNET) as f:
     SUBNET = f.read()
 
