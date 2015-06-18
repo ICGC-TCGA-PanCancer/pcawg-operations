@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Installs the webservice onto a worker node, and tests it for functionality
+# Installs the webservice onto a single worker node, and tests it for functionality
 # Takes an ip address and a key file as arguments
 
 # Although Orchestra will work in any posix environment, this install script
@@ -46,7 +46,7 @@ echo "git clone https://github.com/ICGC-TCGA-PanCancer/pcawg-operations.git"    
 echo "cd pcawg-operations/ops_scripts/orchestra/install"                         >> setup.sh
 echo "sudo cp orchestra.service /etc/init.d/orchestra"                           >> setup.sh
 echo "sudo update-rc.d orchestra defaults"                                       >> setup.sh
-echo "sudo chmod +x /etc/init.d/orchestra"					 >> setup.sh
+echo "sudo chmod +x /etc/init.d/orchestra"					                     >> setup.sh
 echo "sudo service orchestra start"                                              >> setup.sh
 
 # Begin Remote Install
@@ -57,3 +57,6 @@ connector $keyfile $target "bash setup.sh"
 # Cleanup
 
 rm setup.sh
+
+curl $target:9009/healthy
+
