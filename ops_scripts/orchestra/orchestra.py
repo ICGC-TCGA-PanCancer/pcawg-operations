@@ -54,6 +54,8 @@ def RunCommand(cmd):
 
 def main():
     SUBNET = readsubnetfile()
+    
+    # Handle the list command - find all nodes with ochestra installed
     if sys.argv[1] == "list":
         with open(CACHEFILE, "w") as f:
             for ip in netaddr.IPNetwork(SUBNET):
@@ -61,6 +63,8 @@ def main():
                 if data == "TRUE":
                     print ip
                     f.write(str(ip)+"\n")
+    
+    # Handle the busy, and lazy commands - use cached data to find nodes
     if sys.argv[1] == "busy" or sys.argv[1] == "lazy":
         if not os.path.exists(CACHEFILE):
             print "No cache file found: Run 'orchestra list' to create one.\n"
@@ -73,10 +77,14 @@ def main():
                 print ip
             if data == "FALSE" and sys.argv[1] == "lazy":
                 print ip
+    
+    # List the workflows on a particular machine
     if sys.argv[1] == "workflows":
         ip = sys.argv[2]
         data = urllib2.urlopen("http://%s:9009/workflows" % ip, timeout=5).read().strip()
         print data
+    
+    # Integrate with the scheduler to launch an ini file
     if sys.argv[1] == "schedule":
         ip = sys.argv[2]
         ini = sys.argv[3]
