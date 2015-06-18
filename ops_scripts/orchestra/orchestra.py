@@ -87,8 +87,8 @@ if __name__ == '__main__':
             sys.exit(0)
         if sys.argv[1] == "busy" or sys.argv[1] == "lazy" or sys.argv[1] == "list":
             main()
-        if sys.argv[1] == "workflows" and len(sys.argv) == 3:
-            main()
-        if sys.argv[1] == "schedule" and len(sys.argv) == 4:
-            main()
+    if sys.argv[1] == "workflows" and len(sys.argv) == 3:
+        main()
+    if sys.argv[1] == "schedule" and len(sys.argv) == 4:
+        main()
     parsefail()
