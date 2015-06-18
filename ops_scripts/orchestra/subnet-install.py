@@ -8,7 +8,6 @@ import netaddr
 import os
 import sys
 
-__author__ = 'nbyrne'
 
 def main(subnet, keyfile):
     for ip in netaddr.IPNetwork(subnet):
