@@ -11,11 +11,9 @@ import urllib2
 
 
 # CONSTANTS
-CACHEFILE = "~.orchestra_cache"
-
-# Read global subnet variabl
-with open("~.orchestra_subnet") as f:
-    subnet = f.read()
+CACHEFILE = os.path.join(os.getenv("HOME"),".orchestra_cache")
+with open(CACHEFILE) as f:
+    SUBNET = f.read()
 
 
 def RunCommand(cmd):
@@ -48,7 +46,7 @@ def parsefail():
 def main():
     if sys.argv[1] == "list":
         with open(cachefile, "w") as f:
-            for ip in netaddr.IPNetwork(subnet):
+            for ip in netaddr.IPNetwork(SUBNET):
                 data = urllib2.urlopen("%s:9009/healthy" % ip, timeout=2).read()
                 if data == "TRUE":
                     print ip
@@ -58,7 +56,7 @@ def main():
             print "No cache file found: Run 'orchestra list' to create one."
             print ""
             sys.exit(1)
-        for ip in netaddr.IPNetwork(subnet):
+        for ip in netaddr.IPNetwork(SUBNET):
             data = urllib2.urlopen("%s:9009/busy" % ip, timeout=5).read()
             if data == "TRUE" and sys.argv[1] == "busy":
                 print ip
