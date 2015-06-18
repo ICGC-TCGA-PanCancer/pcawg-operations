@@ -47,7 +47,7 @@ def main():
     if sys.argv[1] == "list":
         with open(CACHEFILE, "w") as f:
             for ip in netaddr.IPNetwork(SUBNET):
-                data = urllib2.urlopen("http://%s:9009/healthy" % ip, timeout=2).read()
+                data = urllib2.urlopen("http://%s:9009/healthy" % ip, timeout=2).read().strip()
                 if data == "TRUE":
                     print ip
                     f.write(ip+"\n")
@@ -59,14 +59,14 @@ def main():
         with open(CACHEFILE) as f:
             targets = f.readlines()
         for ip in targets:
-            data = urllib2.urlopen("http://%s:9009/%s" % (ip, sys.argv[1]), timeout=5).read()
+            data = urllib2.urlopen("http://%s:9009/%s" % (ip, sys.argv[1]), timeout=5).read().strip()
             if data == "TRUE" and sys.argv[1] == "busy":
                 print ip
             if data == "FALSE" and sys.argv[1] == "lazy":
                 print ip
     if sys.argv[1] == "workflows":
         ip = sys.argv[2]
-        data = urllib2.urlopen("http://%s:9009/workflows" % ip, timeout=5).read()
+        data = urllib2.urlopen("http://%s:9009/workflows" % ip, timeout=5).read().strip()
         print data
     if sys.argv[1] == "schedule":
         ip = sys.argv[2]
