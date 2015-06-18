@@ -85,7 +85,7 @@ if __name__ == '__main__':
             print "\torchestra schedule [ip address] [ini file] -- send an ini file to a machine and run it."
             print ""
             sys.exit(0)
-        if sys.argv[1] == "busy" or sys.argv[1] == "lazy":
+        if sys.argv[1] == "busy" or sys.argv[1] == "lazy" or sys.argv[1] == "list":
             main()
         if sys.argv[1] == "workflows" and len(sys.argv) == 4:
             main()
