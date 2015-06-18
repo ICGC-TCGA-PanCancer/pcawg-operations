@@ -1,25 +1,39 @@
 #!/usr/bin/python
 
+__author__ = 'nbyrne'
+
 # Redirect behind apache
 
 # Added query strings to support the fields Junjun has requested in Jira Ticket: https://jira.oicr.on.ca/browse/PANCANCER-702
 # TO REPORT WORKFLOW SUCCESS OR FAILURE:
 # curl pancancer.info/:virtualhost?action=[ success/fail/dump ]workflow=[ workflow name ]&gnos=[ gnos location ]&date=[ date in unix format ]&analysisID=[ analysis ID in question]
 
-import logging
 import BaseHTTPServer
+import datetime
+import logging
 import os
+import pytz
 import sqlite3
 import sys
 import time
-import uuid
 import urlparse
-
+import uuid
 
 # Constants
 PORT_NUMBER=10101
 HOST_NAME='127.0.0.1'
 
+def unixtime2utc(timestamp):
+    """ Converts unix timestamps into elasticsearch timestamps.
+    Args:
+        timestamp: A unix timestamp as a string.
+    Returns:
+        A string in elasticsearch compatible format.
+    """
+    datetime
+    return str(
+        datetime.datetime.fromtimestamp(int(timestamp), tz=pytz.UTC).strftime('%Y-%m-%dT%H:%M:%S%z')
+    )
 
 def SetupLogging(filename,level=logging.INFO):
     """ Logging Module Interface.
@@ -36,6 +50,7 @@ def SetupLogging(filename,level=logging.INFO):
 class StoreAndForward(object):
     """ Database Interface Class. """
     def __init__(self, filename="workflow_runs.db"):
+        # Create the database if it doesn't exists already
         if not os.path.exists(filename):
             logging.info("Creating database: %s" % filename)
             conn = sqlite3.connect(filename)
@@ -60,10 +75,11 @@ class StoreAndForward(object):
         workflow = query['workflow'][0]
         gnos = query['gnos'][0]
         date = query['date'][0]
-        logging.info("Insertion into SUCCESS: %s" % (uuid))
+        logging.info("Insertion into SUCCESS: %s" % uuid)
         conn = sqlite3.connect(self.filename)
         c = conn.cursor()
-        c.execute("INSERT INTO SUCCESS (workflow, analysisID, date, gnos) VALUES ('%s','%s','%s','%s');" % (workflow, uuid, date, gnos))
+        c.execute("INSERT INTO SUCCESS (workflow, analysisID, date, gnos) VALUES ('%s','%s','%s','%s');" %
+                  (workflow, uuid, date, gnos))
         c.close()
         conn.commit()
         conn.close()
@@ -77,7 +93,7 @@ class StoreAndForward(object):
         """
         uuid = query['uuid'][0]
         workflow = query['workflow'][0]
-        logging.info("Insertion into FAILURE: %s" % (uuid))
+        logging.info("Insertion into FAILURE: %s" % uuid)
         conn = sqlite3.connect(self.filename)
         c = conn.cursor()
         c.execute("DELETE FROM SUCCESS WHERE workflow='%s' AND analysisID='%s';" % (workflow, uuid))
@@ -97,9 +113,9 @@ class StoreAndForward(object):
         results = ""
         conn = sqlite3.connect(self.filename)
         c = conn.cursor()
-        for row in c.execute("SELECT * FROM SUCCESS WHERE workflow='%s'" % (workflow)):
+        for row in c.execute("SELECT * FROM SUCCESS WHERE workflow='%s'" % workflow):
             for col in row:
-                results += "%s\t" % ( str(col) )
+                results += "%s\t" % str(col)
             results += "\n"
         c.close()
         conn.close()
@@ -121,30 +137,47 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         s.end_headers()
         parsed = urlparse.urlparse(s.path)
         query = urlparse.parse_qs(parsed.query)
- 
+
+        # action is a required field in the query string
         if 'action' not in query:
             print query
             s.wfile.write("Improperly formatted url.\n")
             return
-        
-        if query['action'][0] == 'dump':
-            print query
-            if query['workflow'] != '':
-                HandleRoute('dump', query, s)
-        elif 'uuid' not in query or 'workflow' not in query or 'uuid' not in query or 'gnos' not in query:
+
+        # Structure the date in Linda's elasticsearch format
+        if 'date' not in query:
             print query
             s.wfile.write("Improperly formatted url.\n")
             return
+        else:
+            query['date'] = unixtime2utc(query['date'])
+
+        # Handler for dump requests
+        if query['action'][0] == 'dump':
+            if query['workflow'] != '':
+                HandleRoute('dump', query, s)
+
+        # Enforce the required fields
+        elif 'uuid' not in query or 'workflow' not in query or 'gnos' not in query:
+            print query
+            s.wfile.write("Improperly formatted url.\n")
+            return
+
+        # Enforce a properly formatted uuid
         elif not validUUID(query['uuid'][0] ):
             s.wfile.write("Improperly formatted UUID.\n")
             return
+
+        # Call Handler for success actions
         elif query['action'][0] == 'success':
             if (query['workflow'][0] != '' and query['uuid'][0] != ''
-                and query['date'][0] != '' and query['gnos'][0] != ''):
+            and query['date'][0] != '' and query['gnos'][0] != ''):
                 HandleRoute('success', query, s)
+
+        # Call Handler for fail actions
         elif query['action'][0] == 'fail':
             if (query['workflow'][0] != '' and query['uuid'][0] != ''
-                and query['date'][0] != '' and query['gnos'][0] != ''):
+            and query['date'][0] != '' and query['gnos'][0] != ''):
                 HandleRoute('fail', query, s)
 
         
@@ -197,4 +230,4 @@ if __name__ == '__main__':
     server_class = BaseHTTPServer.HTTPServer
     httpd = server_class((HOST_NAME, PORT_NUMBER), MyHandler)
     main()
-    
+
