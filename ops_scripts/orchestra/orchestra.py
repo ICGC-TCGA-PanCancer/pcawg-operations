@@ -45,7 +45,7 @@ def parsefail():
 
 def main():
     if sys.argv[1] == "list":
-        with open(cachefile, "w") as f:
+        with open(CACHEFILE, "w") as f:
             for ip in netaddr.IPNetwork(SUBNET):
                 data = urllib2.urlopen("%s:9009/healthy" % ip, timeout=2).read()
                 if data == "TRUE":
