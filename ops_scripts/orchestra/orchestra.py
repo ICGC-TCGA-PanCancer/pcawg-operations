@@ -17,12 +17,15 @@ SUBNET = os.path.join(os.getenv("HOME"), ".orchestra_subnet")
 
 def parsefail():
     """Simple help message when parsing the command arguments fails."""
-    print "Try: orchestra help\n\n"
+    print "Try: orchestra help\n"
     sys.exit(1)
 
 
 def readsubnetfile():
     """ Simple helper function that returns the contents of the subnet file. """
+    if not os.path.exists(SUBNET):
+        print "No subnet file found.  You'll need to create one.\n"
+        sys.exit(1)
     with open(SUBNET) as f:
         data = f.read()
     return data
@@ -60,8 +63,7 @@ def main():
                     f.write(str(ip)+"\n")
     if sys.argv[1] == "busy" or sys.argv[1] == "lazy":
         if not os.path.exists(CACHEFILE):
-            print "No cache file found: Run 'orchestra list' to create one."
-            print ""
+            print "No cache file found: Run 'orchestra list' to create one.\n"
             sys.exit(1)
         with open(CACHEFILE) as f:
             targets = f.read().strip().split("\n")
