@@ -34,18 +34,20 @@ copy () {
 # Create the install script
 
 echo "#!/bin/bash"                                                               > setup.sh
-echo "# Test if docker is on this box"                                           > setup.sh
-echo "docker"                                                                    > setup.sh
-echo "[[ $? -neq 0 ]] && exit 0"                                                 > setup.sh
-echo "# Install Orchestra"                                                       > setup.sh
-echo "sudo apt-get -y install git"                                               > setup.sh
-echo "mkdir gitroot"                                                             > setup.sh
-echo "cd gitroot"                                                                > setup.sh
-echo "git clone https://github.com/ICGC-TCGA-PanCancer/pcawg-operations.git"     > setup.sh
-echo "cd pcawg-operations/ops_scripts/orchestra/install"                         > setup.sh
-echo "sudo cp orchestra.service /etc/init.d/orchestra"                           > setup.sh
-echo "sudo update-rc.d orchestra defaults"                                       > setup.sh
-echo "sudo service orchestra start"                                              > setup.sh
+echo "echo \"INSTALLING ON $target\""                                            >> setup.sh
+echo "# Test if docker is on this box"                                           >> setup.sh
+echo "docker 2>&1 > /dev/null"                                                   >> setup.sh
+echo "[[ $? -ne 0 ]] && exit 0"                                                  >> setup.sh
+echo "# Install Orchestra"                                                       >> setup.sh
+echo "sudo apt-get -y install git"                                               >> setup.sh
+echo "mkdir gitroot"                                                             >> setup.sh
+echo "cd gitroot"                                                                >> setup.sh
+echo "git clone https://github.com/ICGC-TCGA-PanCancer/pcawg-operations.git"     >> setup.sh
+echo "cd pcawg-operations/ops_scripts/orchestra/install"                         >> setup.sh
+echo "sudo cp orchestra.service /etc/init.d/orchestra"                           >> setup.sh
+echo "sudo update-rc.d orchestra defaults"                                       >> setup.sh
+echo "sudo chmod +x /etc/init.d/orchestra"					 >> setup.sh
+echo "sudo service orchestra start"                                              >> setup.sh
 
 # Begin Remote Install
 
