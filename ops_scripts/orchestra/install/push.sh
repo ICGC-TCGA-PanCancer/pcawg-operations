@@ -31,6 +31,11 @@ copy () {
 
 }
 
+# Skip machines you can't ping
+
+ping -c 3 $target
+[[ $? -ne 0 ]] && exit 0
+
 # Create the install script
 
 echo "#!/bin/bash"                                                               > setup.sh
