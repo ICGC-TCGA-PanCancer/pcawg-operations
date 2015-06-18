@@ -1,7 +1,7 @@
 #!/bin/bash
 keyfile="~/.ssh/wei-dkfz.pem"
 
-subnet=`cat ~.orchestra_subnet`
+subnet=`cat ~/.orchestra_subnet`
 echo "Installing dependencies ..."
 echo "" > ~/.orchestra_subnet
 sudo apt-get install -y python-pip 2>&1 > /dev/null
