@@ -23,7 +23,7 @@ GNOSKEY_LOCATION = "/home/ubuntu/.ssh/gnos.pem"
 
 CRONTAB = ""
 CRONTAB += "#SCHEDULER: check for a runner script and execute it\n"
-CRONTAB += "#* * * * * [ -e /home/ubuntu/ini/runner.sh ] && bash /home/ubuntu/ini/runner.sh 2>&1 > ~/.scheduler.txt && mv /home/ubuntu/ini/runner.sh /home/ubuntu/ini/runner.ran\n\n"
+CRONTAB += "* * * * * [ -e /home/ubuntu/ini/runner.sh ] && bash /home/ubuntu/ini/runner.sh 2>&1 > ~/.scheduler.txt && mv /home/ubuntu/ini/runner.sh /home/ubuntu/ini/runner.ran\n\n"
 
 def RunCommand(cmd):
     """ Execute a system call safely, and return output.

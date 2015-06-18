@@ -39,13 +39,14 @@ echo "# Test if docker is on this box"                                          
 echo "docker 2>&1 > /dev/null"                                                   >> setup.sh
 echo "[[ $? -ne 0 ]] && exit 0"                                                  >> setup.sh
 echo "# Install Orchestra"                                                       >> setup.sh
-echo "sudo apt-get -y install git"                                               >> setup.sh
-echo "mkdir gitroot"                                                             >> setup.sh
+echo "sudo apt-get -y install git 2>&1 > /dev/null"                              >> setup.sh
+echo "rm -rf gitroot 2>&1 > /dev/null"                                           >> setup.sh
+echo "mkdir gitroot 2>&1 > /dev/null"                                            >> setup.sh
 echo "cd gitroot"                                                                >> setup.sh
-echo "git clone https://github.com/ICGC-TCGA-PanCancer/pcawg-operations.git"     >> setup.sh
+echo "git clone https://github.com/ICGC-TCGA-PanCancer/pcawg-operations.git 2>&1 > /dev/null"     >> setup.sh
 echo "cd pcawg-operations/ops_scripts/orchestra/install"                         >> setup.sh
 echo "sudo cp orchestra.service /etc/init.d/orchestra"                           >> setup.sh
-echo "sudo update-rc.d orchestra defaults"                                       >> setup.sh
+echo "sudo update-rc.d orchestra defaults 2>&1 > /dev/null"                      >> setup.sh
 echo "sudo chmod +x /etc/init.d/orchestra"					                     >> setup.sh
 echo "sudo service orchestra start"                                              >> setup.sh
 
