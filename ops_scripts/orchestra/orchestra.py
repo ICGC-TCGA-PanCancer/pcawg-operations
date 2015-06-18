@@ -50,7 +50,7 @@ def main():
                 data = urllib2.urlopen("http://%s:9009/healthy" % ip, timeout=2).read().strip()
                 if data == "TRUE":
                     print ip
-                    f.write(ip+"\n")
+                    f.write(str(ip)+"\n")
     if sys.argv[1] == "busy" or sys.argv[1] == "lazy":
         if not os.path.exists(CACHEFILE):
             print "No cache file found: Run 'orchestra list' to create one."
