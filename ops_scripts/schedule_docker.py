@@ -14,12 +14,16 @@ import sys
 
 # Constants
 
-# Turn on to enable debugging
-DEBUG=False
 
-IP_REGEX = "\b((?:[0-9]{1,3}\.){3}[0-9]{1,3})\b"
+WORKFLOWNAME="Workflow_Bundle_DEWrapperWorkflow_"
 SSHKEY_LOCATION = "/home/ubuntu/.ssh/wei-dkfz.pem"
 GNOSKEY_LOCATION = "/home/ubuntu/.ssh/gnos.pem"
+
+
+
+# Turn on to enable debugging
+DEBUG=False
+IP_REGEX = "\b((?:[0-9]{1,3}\.){3}[0-9]{1,3})\b"
 
 CRONTAB = ""
 CRONTAB += "#SCHEDULER: check for a runner script and execute it\n"
