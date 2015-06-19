@@ -1,9 +1,9 @@
 ### orchestra
 
 This is an experimental webservice for managing machines in a subnet.<br>
-On your launcher node, clone this repo and navigate to this folder.<br><br>
+On your launcher node, clone this repo and navigate to this folder.<br>
 
-The premise is very simple, a tiny webservice that runs on all machines.<br>
+It's a very thing webservice that runs on all worker machines.<br>
 You can run ```orchestra list``` to poll the entire subnet to find workers.<br>
 This allows you to generate lists of workers from the command line to poll or schedule to.<br><br>
 
