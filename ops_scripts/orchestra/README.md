@@ -21,6 +21,11 @@ Once this is in place, you can install orchestra on the whole subnet:<br>
 This will take some time to complete.<br>
 Once it's done, you can do the following to confirm you can manage your machines:<br>
 ```orchestra list```<br><br>
+This command will take some time to run as it tries all IP addresses available to find workers<br>
+in your subnet.  Once it has finished, it creates a cache to make subsequent commands execute quickly.<br>
+```orchestra busy``` will list all the machines currently running docker containers.<br>
+```orchestra lazy``` will list all the machines not currently running workflows.<br><br>
+
 
 #### Provision A Single Worker
 Get the IP of your host.<br>
