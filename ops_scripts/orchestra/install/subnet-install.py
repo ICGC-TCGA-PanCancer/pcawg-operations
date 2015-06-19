@@ -8,7 +8,6 @@ import netaddr
 import os
 import sys
 
-
 def main(subnet, keyfile):
     for ip in netaddr.IPNetwork(subnet):
         os.system("bash install/push.sh %s %s" % (ip, keyfile))
