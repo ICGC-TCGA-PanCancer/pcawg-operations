@@ -6,7 +6,7 @@
 
 - name: Create Git Repo Root
   sudo: "{{ user_name }}"
-  file: dest=~/gitroot mode=755 owner={{ user_name }} group={{ user_name }} state=directory
+  file: dest=/home/{{ user_name }}/gitroot mode=755 owner={{ user_name }} group={{ user_name }} state=directory
 
 - name: Install Required Packages
   sudo: True
@@ -16,7 +16,7 @@
 
 - name: Install the Git Repo for pcawg-operations
   sudo: "{{ user_name }}"
-  command: chdir=~/gitroot git clone https://github.com/ICGC-TCGA-PanCancer/pcawg-operations.git
+  command: chdir=/home/{{ user_name }}/gitroot git clone https://github.com/ICGC-TCGA-PanCancer/pcawg-operations.git
 
 - name: Install Orchestra Service File
   sudo: True
