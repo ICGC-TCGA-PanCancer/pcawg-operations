@@ -1,4 +1,4 @@
-### orchestra
+### orchestra  (Still not fully tested- I'm poking at this when I have a free minute here and there.)
 
 This is an experimental webservice for managing machines in a subnet.<br>
 On your launcher node, clone this repo and navigate to this folder.<br>
