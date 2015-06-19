@@ -20,4 +20,8 @@ echo "${target} ansible_ssh_private_key_file=${keyfile}" >> inventory
 
 # Begin Remote Install as Background Process
 
-ansible-playbook -i inventory site.yml &
+ansible-playbook -i inventory site.yml
+
+# Remote Test
+
+curl $target:9009/healthy
