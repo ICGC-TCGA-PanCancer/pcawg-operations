@@ -3,6 +3,10 @@
 This is an experimental webservice for managing machines in a subnet.<br>
 On your launcher node, clone this repo and navigate to this folder.<br><br>
 
+The premise is very simple, a tiny webservice that runs on all machines.<br>
+You can run ```orchestra list``` to poll the entire subnet to find workers.<br>
+This allows you to generate lists of workers from the command line to poll or schedule to.<br><br>
+
 #### Provision an Entire Subnet Automatically
 
 To get started, put the CIDR of your subnet in this file:<br>
