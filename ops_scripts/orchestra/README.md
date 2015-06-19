@@ -2,6 +2,9 @@
 
 This is an experimental webservice for managing machines in a subnet.<br>
 On your launcher node, clone this repo and navigate to this folder.<br><br>
+
+#### Provision and Entire Subnet Automatically
+
 To get started, put the CIDR of your subnet in this file:<br>
 ```vi ~/.orchestra_subnet```<br><br>
 
@@ -14,3 +17,7 @@ Once this is in place, you can install orchestra on the whole subnet:<br>
 This will take some time to complete.<br>
 Once it's done, you can do the following to confirm you can manage your machines:<br>
 ```orchestra list```<br><br>
+
+#### Provision A Single Worker
+Get the IP of your host.<br>
+```bash install/push.sh [ip address]```<br><br>
