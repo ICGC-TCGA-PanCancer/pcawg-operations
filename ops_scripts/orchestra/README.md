@@ -3,7 +3,7 @@
 This is an experimental webservice for managing machines in a subnet.<br>
 On your launcher node, clone this repo and navigate to this folder.<br><br>
 
-#### Provision and Entire Subnet Automatically
+#### Provision an Entire Subnet Automatically
 
 To get started, put the CIDR of your subnet in this file:<br>
 ```vi ~/.orchestra_subnet```<br><br>
