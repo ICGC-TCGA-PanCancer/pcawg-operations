@@ -13,6 +13,7 @@ Take a minute now and enable the proxy and ssl modules in:<br>
 `cd /etc/apache2/mods-enabled`<br>
 `sudo ln -s ../mods-available/proxy_http.load .`<br>
 `sudo ln -s ../mods-available/ssl.* .`<br>
+`sudo ln -s ../mods-available/socache_shmcb.load .`<br>
 
 #### Generate the certificates
 **Get a hold of the server.pem/server.key files and put them in /home/ubuntu/.ssh with the ca.pem file**<br>
