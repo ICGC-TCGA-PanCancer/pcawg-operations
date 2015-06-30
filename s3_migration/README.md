@@ -25,5 +25,8 @@ Take a minute now and enable the proxy and ssl modules in:<br>
 `sudo cp /home/ubuntu/gitroot/pcawg-operations/s3_migration/s3migration.service /etc/init.d/s3migration`<br>
 `sudo chmod +x /etc/init.d/s3migration`<br>
 `sudo update-rc.d s3migration defaults`<br>
+`sudo apt-get install python-pip`<br>
+`sudo pip install pytz`<br>
+`sudo update-rc.d s3migration defaults`<br>
 `sudo service s3migration start`<br>
 <br>
