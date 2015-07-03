@@ -49,7 +49,13 @@ mv _all_sites.$time_stamp.sanger_variant_called_donors.txt \
 cd /mnt/data/pcawg-operations/variant_calling/sanger_workflow/blacklists/_all_sites
 
 cat _all_sites.$time_stamp.sanger_variant_called_donors.txt \
-    annotation.*.txt \
+    annotation.150226-1002.alignment_failed_manual_curation.txt \
+    annotation.150226-1003.alignment_failed_qc.txt \
+    annotation.150409-1401.esad-uk_header_issue.txt \
+    annotation.150527-1404.esad-uk_header_issue.txt \
+    annotation.150626-1141.esad-uk_header_issue.txt \
+    annotation.150629-1137.paca-au_header_issue.txt \
+    annotation.150630-1556.esad-uk_header_issue.txt \
     pdc1_1.150114-2103.pilot-63.txt | sort | uniq \
     > _all_sites.$time_stamp.merged_called-donors-pilot63-annotation.txt
 
