@@ -145,7 +145,7 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             return
 
         # Structure the date in Linda's elasticsearch format
-        if 'date' not in query:
+        if 'date' not in query and query['action'] != 'dump':
             print query
             s.wfile.write("Improperly formatted url.\n")
             return
