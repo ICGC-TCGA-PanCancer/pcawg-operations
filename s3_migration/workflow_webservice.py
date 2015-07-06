@@ -141,24 +141,24 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         # action is a required field in the query string
         if 'action' not in query:
             print query
-            s.wfile.write("Improperly formatted url.\n")
+            s.wfile.write("Improperly formatted url (no action).\n")
             return
-
-        # Structure the date in Linda's elasticsearch format
-        if 'date' not in query and query['action'] != 'dump':
-            print query
-            s.wfile.write("Improperly formatted url.\n")
-            return
-        else:
-            query['date'] = unixtime2utc(query['date'])
 
         # Handler for dump requests
         if query['action'][0] == 'dump':
             if query['workflow'] != '':
                 HandleRoute('dump', query, s)
+		return
+        
+	# Structure the date in Linda's elasticsearch format
+        if 'date' not in query:
+            s.wfile.write("Improperly formatted url. Date not specified.\n")
+            return
+        else:
+            query['date'] = unixtime2utc(query['date'])
 
         # Enforce the required fields
-        elif 'uuid' not in query or 'workflow' not in query or 'gnos' not in query:
+        if 'uuid' not in query or 'workflow' not in query or 'gnos' not in query:
             print query
             s.wfile.write("Improperly formatted url.\n")
             return
