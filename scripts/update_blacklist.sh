@@ -74,7 +74,7 @@ git push
 
 # use the github API to tag and release the new blacklist
 time_stamp=$(date '+20%y-%m-%d')
-/home/ubuntu/blacklist/release.pl $time_stamp
+/mnt/data/pcawg-operations/scripts/release.pl $time_stamp
 
 
 
