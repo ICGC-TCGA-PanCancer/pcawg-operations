@@ -29,7 +29,6 @@ fi
 
 echo in path $pwd
 
-
 time_stamp=$(date '+%y%m%d-%H%M')
 cat live_sanger_variant_called_donors.*.txt > _all_sites.$time_stamp.sanger_variant_called_donors.txt
 
@@ -37,11 +36,12 @@ list=$(wc -l  _all_sites.$time_stamp.sanger_variant_called_donors.txt)
 echo The new file has $list lines
 
 export PATH=${PATH}:/usr/local/bin
-cd /mnt/data/
-rm -fr pcawg-operations
-git clone git@github.com:ICGC-TCGA-PaCancer/pcawg-operations.git
+git pull
+#cd /mnt/data/
+#rm -fr pcawg-operations
+#git clone git@github.com:ICGC-TCGA-PaCancer/pcawg-operations.git
 #git clone git@github.com:mckays630/pcawg-operations.git  
-cd $path
+#cd $path
 
 mv _all_sites.$time_stamp.sanger_variant_called_donors.txt \
     /mnt/data/pcawg-operations/variant_calling/sanger_workflow/blacklists/_all_sites
