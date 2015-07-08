@@ -36,12 +36,14 @@ list=$(wc -l  _all_sites.$time_stamp.sanger_variant_called_donors.txt)
 echo The new file has $list lines
 
 export PATH=${PATH}:/usr/local/bin
-git pull
-#cd /mnt/data/
-#rm -fr pcawg-operations
-#git clone git@github.com:ICGC-TCGA-PaCancer/pcawg-operations.git
-#git clone git@github.com:mckays630/pcawg-operations.git  
-#cd $path
+
+# have to delete and reclone working copy of repo each day 
+# for automated authentication to work
+cd /mnt/data/
+rm -fr pcawg-operations
+git clone git@github.com:ICGC-TCGA-PanCancer/pcawg-operations.git
+
+cd $path
 
 mv _all_sites.$time_stamp.sanger_variant_called_donors.txt \
     /mnt/data/pcawg-operations/variant_calling/sanger_workflow/blacklists/_all_sites
@@ -74,7 +76,7 @@ git push
 
 # use the github API to tag and release the new blacklist
 time_stamp=$(date '+20%y-%m-%d')
-/mnt/data/pcawg-operations/scripts/release.pl $time_stamp
+/home/ubuntu/blacklist/release.pl $time_stamp
 
 
 
