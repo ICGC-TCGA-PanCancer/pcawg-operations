@@ -1,0 +1,5 @@
+PACA-CA	PCSI_0256	1	https://gtrepo-ebi.annailabs.com/
+PACA-CA	PCSI_0268	1	https://gtrepo-ebi.annailabs.com/
+PACA-CA	PCSI_0280	1	https://gtrepo-ebi.annailabs.com/
+PACA-CA	PCSI_0287	1	https://gtrepo-ebi.annailabs.com/
+PACA-CA	PCSI_0473	1	https://gtrepo-ebi.annailabs.com/
