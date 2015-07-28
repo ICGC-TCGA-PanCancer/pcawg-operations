@@ -12,4 +12,4 @@ pdc2_0	Chicago
 sanger	Cambridge
 tokyo	Tokyo
 ucsc	Santa Cruz
-
+azure Azure
