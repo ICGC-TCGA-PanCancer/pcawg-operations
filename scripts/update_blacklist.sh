@@ -59,6 +59,7 @@ cat _all_sites.$time_stamp.sanger_variant_called_donors.txt \
     annotation.150629-1137.paca-au_header_issue.txt \
     annotation.150630-1556.esad-uk_header_issue.txt \
     annotation.150811-1217.alignment_failed_qc.txt \
+    annotation.150820-1159.esad-uk_normal_tumor_same.txt \
     pdc1_1.150114-2103.pilot-63.txt | sort | uniq \
     > _all_sites.$time_stamp.merged_called-donors-pilot63-annotation.txt
 
