@@ -4214,6 +4214,7 @@ LIRI-JP::RK002	50e6a84c-acfd-4d74-9d68-6a2c94d63e1d	normal_wgs_bwa_bam
 LIRI-JP::RK002	f9f47dd6-ef45-4606-9467-142a59ef6395	tumor_wgs_bwa_bam
 LIRI-JP::RK002	35ae3dbd-066f-4168-aee7-c4fdd5063a81	sanger_vcf
 LIRI-JP::RK002	c8bb1c99-8153-4e7a-931e-a9233ad13992	normal_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK002	fd747ff7-7e9c-406c-9478-35086ddffdd5	normal_RNA_Seq_STAR_bam
 LIRI-JP::RK002	1bedfbee-2085-4da0-a49a-8f7b8c1283b2	tumor_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK003	a6031777-18af-4d05-97eb-409e7540f916	normal_wgs_bwa_bam
 LIRI-JP::RK003	24716465-ab5c-437a-bb79-07ee92505315	tumor_wgs_bwa_bam
@@ -4247,6 +4248,7 @@ LIRI-JP::RK012	d5464c90-5286-4ed3-9158-3a8fa59db6db	normal_wgs_bwa_bam
 LIRI-JP::RK012	4250713c-bfbf-4020-8240-eeab459fee88	tumor_wgs_bwa_bam
 LIRI-JP::RK012	5a9a7cae-16ef-4853-bfa6-0021fdba6b84	sanger_vcf
 LIRI-JP::RK012	0a8a26e5-3276-4fad-9a88-0eb62c7edbbf	normal_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK012	823cf012-1f50-4cee-ab06-5bc8302c4e2d	normal_RNA_Seq_STAR_bam
 LIRI-JP::RK012	249f0ae2-8990-46c0-a511-20231451e4ed	tumor_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK014	03068af0-7356-47fd-ab36-8d11b0fae880	normal_wgs_bwa_bam
 LIRI-JP::RK014	2dfdc0db-24e3-4e56-abc3-4fdecddca7d0	tumor_wgs_bwa_bam
@@ -4268,6 +4270,7 @@ LIRI-JP::RK019	57accc2a-d8d6-4440-af63-37279a95069c	tumor_wgs_bwa_bam
 LIRI-JP::RK019	eb97f2ad-d37a-4b38-bc1f-c86319dc8e38	sanger_vcf
 LIRI-JP::RK019	15031621-ccae-41c7-bfe1-8b298698042e	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK019	798579d6-bdb9-4c0d-a9c5-d005ef7c256e	tumor_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK019	8312f502-db97-42ea-aebc-25a27dbc6795	tumor_RNA_Seq_STAR_bam
 LIRI-JP::RK020	77c67c28-4fac-4761-9dc7-dde22900cc43	normal_wgs_bwa_bam
 LIRI-JP::RK020	45103758-c57b-4440-8fec-1f0132cd0b99	tumor_wgs_bwa_bam
 LIRI-JP::RK020	1f351cc3-08a4-494f-841b-5d7dd40cfd4e	sanger_vcf
@@ -4338,11 +4341,13 @@ LIRI-JP::RK036	fe02ad40-adba-49b9-bfcc-dbf9aab795fb	tumor_wgs_bwa_bam
 LIRI-JP::RK036	c0f3fc8f-e01d-4b32-b1d5-51489baeafb7	sanger_vcf
 LIRI-JP::RK036	3bc73f9d-1ae9-481e-922f-c02b617786ac	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK036	99311e76-d5ca-473b-aefe-c6149c3c95dc	tumor_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK036	e4ed0cb7-f173-4d7b-9bb0-c717e1c74e7c	tumor_RNA_Seq_STAR_bam
 LIRI-JP::RK037	d87bf009-b61e-4f0d-a1fb-bfd8fc8ec2be	normal_wgs_bwa_bam
 LIRI-JP::RK037	90936f7a-32cd-4311-b78c-88b5c0962c03	tumor_wgs_bwa_bam
 LIRI-JP::RK037	8a337c74-2890-47f6-9ff1-e8f91a01c2c8	sanger_vcf
 LIRI-JP::RK037	fe1007e6-a8ba-463e-aa3b-cbe4cdb2d887	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK037	0a7ad386-efec-43aa-a52c-16f7ed76c1b6	tumor_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK037	81f867d1-4bae-4699-a1a5-0d4420f71d0b	tumor_RNA_Seq_STAR_bam
 LIRI-JP::RK038	c6b167a5-0a74-488f-b3b9-55b9bf90ffa5	normal_wgs_bwa_bam
 LIRI-JP::RK038	d6c37eaa-0246-4467-8f6c-2a0a826e6bc2	tumor_wgs_bwa_bam
 LIRI-JP::RK038	8e55120c-4043-40f5-af24-569c71691839	sanger_vcf
@@ -4411,6 +4416,7 @@ LIRI-JP::RK056	a6773ad9-44af-4763-9967-c50e3fd4f624	tumor_wgs_bwa_bam
 LIRI-JP::RK056	81009b44-4c42-453f-b154-282e8da3b57a	sanger_vcf
 LIRI-JP::RK056	e4ab6e1e-5819-4337-9cd0-a644223c208d	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK056	cc246a30-f41a-44ea-9c4a-640c646d9d4d	tumor_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK056	13ebd757-bc37-44cd-a861-1fe81bf94d31	tumor_RNA_Seq_STAR_bam
 LIRI-JP::RK057	45da29b4-67e9-4795-93a0-59ca64fdd983	normal_wgs_bwa_bam
 LIRI-JP::RK057	68a8292e-6eb1-4cc4-a68f-7290f3fb8865	tumor_wgs_bwa_bam
 LIRI-JP::RK057	206e96f6-0081-4ab3-a554-ae2b5a99d4d1	sanger_vcf
@@ -4459,6 +4465,7 @@ LIRI-JP::RK069	676878a6-6399-448f-9770-7fb945c9b786	normal_wgs_bwa_bam
 LIRI-JP::RK069	25b42a55-9c92-4811-9dca-223c22dc09db	tumor_wgs_bwa_bam
 LIRI-JP::RK069	08427ce0-cbde-4d0c-8292-32b1f9cdecdb	sanger_vcf
 LIRI-JP::RK069	85ca0051-46f9-42d2-8030-5280067a5065	normal_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK069	9307bf2e-3fbb-40dd-a5a2-d84cfd75035a	normal_RNA_Seq_STAR_bam
 LIRI-JP::RK069	aa007a1e-0a05-4f07-ade4-ccf69dab9d6a	tumor_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK070	f5df58f9-b67e-4459-b95b-e01b3c602f5e	normal_wgs_bwa_bam
 LIRI-JP::RK070	02fad90c-eadf-4173-9871-cc81a40a9af7	tumor_wgs_bwa_bam
@@ -4482,6 +4489,7 @@ LIRI-JP::RK075	c7d612be-072d-44eb-88a5-7c402379ec66	tumor_wgs_bwa_bam
 LIRI-JP::RK075	8c8e5d4d-935b-4c1e-964d-d55376e7d116	sanger_vcf
 LIRI-JP::RK075	2d18e440-3249-410f-a03b-00c9170f39c3	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK075	670af5b1-2b07-419b-bf86-5d8b7a014011	tumor_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK075	5d35f0bf-8f01-4d4a-aa1d-c25d65f5149f	tumor_RNA_Seq_STAR_bam
 LIRI-JP::RK076	d1ab0494-5155-40f2-82f7-7d1407126ee7	normal_wgs_bwa_bam
 LIRI-JP::RK076	97d2fb1a-608c-48da-9337-9bc3e63ecd16	tumor_wgs_bwa_bam
 LIRI-JP::RK076	7b43a0fe-c941-4d13-b290-263193afd3b7	sanger_vcf
@@ -4609,6 +4617,7 @@ LIRI-JP::RK112	41af6f5a-b100-4a98-bbf4-f10f4aea74c3	normal_wgs_bwa_bam
 LIRI-JP::RK112	4edf43b8-4fab-489d-b79d-1ec3da48faaa	tumor_wgs_bwa_bam
 LIRI-JP::RK112	d6e13f30-e407-4f9b-b04d-4d972bcc1dfd	sanger_vcf
 LIRI-JP::RK112	fed73ff5-f3ba-4e62-950f-0b7b6219627e	tumor_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK112	0071533e-e792-4a96-bb4f-49ba0f99e00a	tumor_RNA_Seq_STAR_bam
 LIRI-JP::RK113	84f1371e-8d0b-4c27-aa31-2a37a2e285e2	normal_wgs_bwa_bam
 LIRI-JP::RK113	4c69f283-6c7f-4f1b-992b-6f00f87e22db	tumor_wgs_bwa_bam
 LIRI-JP::RK113	c8b45c95-56e2-4851-89e8-3df198ca9936	sanger_vcf
@@ -4658,6 +4667,7 @@ LIRI-JP::RK130	57924819-988f-47a0-8c6a-1c34840f9e06	tumor_wgs_bwa_bam
 LIRI-JP::RK130	c30580d0-f61e-4136-a429-605f7e35c981	sanger_vcf
 LIRI-JP::RK130	c4982c83-3da1-40eb-9dd8-15b383169c58	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK130	73808ba7-5955-4bba-aaef-0e81db56e1f3	tumor_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK130	85015a35-77a2-4184-b814-e9ce1b949197	tumor_RNA_Seq_STAR_bam
 LIRI-JP::RK131	4f418f91-b911-4942-aa8b-4911c7766332	normal_wgs_bwa_bam
 LIRI-JP::RK131	7992f31b-a7b4-4f92-b6c0-357839c80887	tumor_wgs_bwa_bam
 LIRI-JP::RK131	a0378fa3-f3d0-4bdb-8bc4-41e9478c296a	sanger_vcf
@@ -4717,6 +4727,7 @@ LIRI-JP::RK146	9bba58bf-54a8-4e26-a1fe-0bc84b255e29	normal_wgs_bwa_bam
 LIRI-JP::RK146	bdecd153-0fa1-4388-8365-579e487584ef	tumor_wgs_bwa_bam
 LIRI-JP::RK146	91e1044f-d36c-48ec-9415-d6bd62486b36	sanger_vcf
 LIRI-JP::RK146	36c94880-35fc-447c-906b-027d2b9687a1	normal_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK146	a8ce37d2-4c6d-486e-ba33-9dd695303000	normal_RNA_Seq_STAR_bam
 LIRI-JP::RK146	dbd2393d-3972-4117-849d-1fa3cb3c876f	tumor_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK146	dd712b54-512b-4c07-ac2d-1dc305ec39ff	tumor_RNA_Seq_STAR_bam
 LIRI-JP::RK147	3e9f70d4-4896-4af4-981a-d1bd8b210ad3	normal_wgs_bwa_bam
@@ -4877,6 +4888,7 @@ LIRI-JP::RK204	ea02615d-4021-41a9-a29c-55209046e78c	tumor_wgs_bwa_bam
 LIRI-JP::RK204	20047ec6-cf9b-4c4b-aee2-67e83accf9eb	sanger_vcf
 LIRI-JP::RK204	30ec9b9a-99d1-4adb-a763-c96bfc8c207e	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK204	a12ad366-d257-4bbe-9703-7e7917e86217	tumor_RNA_Seq_TOPHAT_bam
+LIRI-JP::RK204	b9a35448-5b9f-4c0b-b530-4d7dc91fb07f	tumor_RNA_Seq_STAR_bam
 LIRI-JP::RK205	38bf0895-a9b6-4f3d-a771-0c32531cac3c	normal_wgs_bwa_bam
 LIRI-JP::RK205	b2f41795-82ba-43f0-af98-08f0442ed33d	tumor_wgs_bwa_bam
 LIRI-JP::RK205	51c420d7-c476-40b7-bdbe-f5fcc53d231e	sanger_vcf
