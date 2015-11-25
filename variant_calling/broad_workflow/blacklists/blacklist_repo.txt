@@ -1,6 +1,6 @@
-bsc
+#bsc
 #ebi
 #dkfz
-etri
+#etri
 #osdc-icgc
 #riken
