@@ -1,0 +1,3 @@
+GBM-US	9853c6bb-a42c-4698-abe5-f3c897ebc8f6
+KIRC-US	3cbca837-f5a7-4a87-8f02-c59eac232d5a
+UCEC-US	09066fbf-6a1d-46c9-a4c5-c53340c3d1ba
