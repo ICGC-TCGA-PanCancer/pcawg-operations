@@ -1,4 +1,5 @@
-# Blacklists for Sanger Variant Calling Workflow
+# Blacklists for Sanger Variant Calling Workflow 
+
 
 ## Overview
 
@@ -15,3 +16,7 @@ One very important different blacklist has compared to whitelist is that, it's v
 We can generate blacklist as often as hourly, so it should be able to very effectively prevent compute sites from scheduling donors that have already been called in any compute site and submitted the call result to a GNOS repo.
 
 We use the directory named '\_all\_sites' to hold blacklists that are applicable to all compute sites. Compute site specific blacklist is still possible to have, just put them in the directory named after the compute site, all file naming conventions are the same as whitelist.
+
+
+<b>./scripts</b> contains scripts used to automatically update the blacklist once daily using this crontab
+<pre>1 4 * * * sudo -u ubuntu bash /home/ubuntu/blacklist/update_blacklist.sh >> /home/ubuntu/logs/blacklist.log 2>&1</pre>
