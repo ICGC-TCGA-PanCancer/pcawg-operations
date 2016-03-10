@@ -16438,7 +16438,7 @@ PBCA-DE::ICGC_MB34	6be3201c-ed74-4440-8fa4-070a644f0f43	broad_tar_variant_callin
 PBCA-DE::ICGC_MB35	00843d8e-f7f0-4c61-8193-6fba74830e2c	normal_wgs_bwa_bam
 PBCA-DE::ICGC_MB35	e560e12b-66c6-4357-a4a0-2c8c13425768	tumor_wgs_bwa_bam
 PBCA-DE::ICGC_MB35	56c05e40-ceb7-11e5-8b9b-d6714d100685	sanger_variant_calling
-PBCA-DE::ICGC_MB35	9acea2c9-0356-4274-8f27-7b80198768d4	dkfz_embl_variant_calling
+PBCA-DE::ICGC_MB35	bcc65af9-d099-499b-adee-8442cdff16d4	dkfz_embl_variant_calling
 PBCA-DE::ICGC_MB35	5e4b8f2f-50cb-4fc1-83a9-21235c29d1ad	broad_variant_calling
 PBCA-DE::ICGC_MB35	fe987bde-8ed8-4b93-b12e-646ca12eb109	muse_variant_calling
 PBCA-DE::ICGC_MB35	75ee6ff3-100a-499e-b4f9-a0d525f012e9	broad_tar_variant_calling
