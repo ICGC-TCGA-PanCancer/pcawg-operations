@@ -560,9 +560,6 @@ BOCA-UK::CGP_donor_1691145	2e8f1a84-430d-4591-ab68-d8bf7bfe00fe	normal_wgs_bwa_b
 BOCA-UK::CGP_donor_1691145	cd235220-7766-4e55-a7a5-7dc993beb2dc	tumor_wgs_bwa_bam
 BOCA-UK::CGP_donor_1691145	6bcaa242-d2b7-11e5-9718-a5315c6878de	sanger_variant_calling
 BOCA-UK::CGP_donor_1691145	46bd02b9-9bff-4177-958d-b26388c8ec9d	dkfz_embl_variant_calling
-BOCA-UK::CGP_donor_1691145	7ae772fc-9581-46b9-8802-8b99332ff7e7	broad_variant_calling
-BOCA-UK::CGP_donor_1691145	a282f517-0ad1-439b-9c25-4ce19346beb4	muse_variant_calling
-BOCA-UK::CGP_donor_1691145	714306ba-0fd0-4a48-80e0-f69bc705866d	broad_tar_variant_calling
 BOCA-UK::CGP_donor_1691146	7d2a2c79-c5c8-4c88-8a37-eb328d444b05	normal_wgs_bwa_bam
 BOCA-UK::CGP_donor_1691146	149d6e14-045d-4a12-8456-305b2c5a8984	tumor_wgs_bwa_bam
 BOCA-UK::CGP_donor_1691146	f46cf76a-d2a5-11e5-ae84-35255c6878de	sanger_variant_calling
@@ -1343,9 +1340,6 @@ BRCA-UK::CGP_donor_1199131	b88dc76c-4322-42a9-b8b6-8fa33730b264	normal_wgs_bwa_b
 BRCA-UK::CGP_donor_1199131	1a6f3118-3878-4b61-8f5e-42df61433cb3	tumor_wgs_bwa_bam
 BRCA-UK::CGP_donor_1199131	d200ba44-cfe5-11e5-a59e-64058a9203f5	sanger_variant_calling
 BRCA-UK::CGP_donor_1199131	a9e9e036-a1e9-4c8b-98f0-84878430a33e	dkfz_embl_variant_calling
-BRCA-UK::CGP_donor_1199131	3de1f461-6776-417c-9a69-ac7a412fb2b1	broad_variant_calling
-BRCA-UK::CGP_donor_1199131	52a99c36-8be6-4362-9411-501893f3693b	muse_variant_calling
-BRCA-UK::CGP_donor_1199131	c2eabb38-c8e6-48ad-9fe5-bcbb4960c0a0	broad_tar_variant_calling
 BRCA-UK::CGP_donor_1199137	6f560ceb-265b-4b33-a58b-48dc6f8b7169	normal_wgs_bwa_bam
 BRCA-UK::CGP_donor_1199137	b0693623-9626-4028-b9d2-2ef537bcd793	tumor_wgs_bwa_bam
 BRCA-UK::CGP_donor_1199137	9c805802-cfe5-11e5-a59e-64058a9203f5	sanger_variant_calling
@@ -8235,9 +8229,6 @@ LINC-JP::HX26	f8b1e9c6-4c90-40fc-b0a6-b28b7dd0d297	normal_wgs_bwa_bam
 LINC-JP::HX26	863b0ed2-d040-4125-a2a7-37f0d5fe2c59	tumor_wgs_bwa_bam
 LINC-JP::HX26	a34cf4aa-ceb5-11e5-8712-d4714d100685	sanger_variant_calling
 LINC-JP::HX26	e0ece741-f7f3-42f5-a492-73d61d42101e	dkfz_embl_variant_calling
-LINC-JP::HX26	c2e23cdb-fd67-4959-b30a-bbbebf5ad121	broad_variant_calling
-LINC-JP::HX26	e85115ad-c7ef-48b5-b450-22dd5252f4cc	muse_variant_calling
-LINC-JP::HX26	5ea17779-a447-4f0d-a238-fc1980f827e6	broad_tar_variant_calling
 LINC-JP::HX27	db0daa70-aa76-47e9-8ac8-dd9f958ec286	normal_wgs_bwa_bam
 LINC-JP::HX27	121faea3-eb4a-4f1a-b1e5-021884380141	tumor_wgs_bwa_bam
 LINC-JP::HX27	c394df0c-ceb5-11e5-8712-d4714d100685	sanger_variant_calling
@@ -8377,9 +8368,6 @@ LIRI-JP::RK010	fe9e3b1d-cb51-446e-a4f1-1fdd1707a288	normal_wgs_bwa_bam
 LIRI-JP::RK010	b3ccb581-2cda-4588-9d67-ec58e8ff6ff0	tumor_wgs_bwa_bam
 LIRI-JP::RK010	84a20786-d2ff-11e5-b2f2-46585c6878de	sanger_variant_calling
 LIRI-JP::RK010	de863d9a-7117-4381-a95c-379189ceecb0	dkfz_embl_variant_calling
-LIRI-JP::RK010	af85151a-11f9-498c-b97d-0a91bfedce8a	broad_variant_calling
-LIRI-JP::RK010	9c5cf90d-31bd-4aea-a360-ae5e30436e21	muse_variant_calling
-LIRI-JP::RK010	4ea6b004-d7d8-4084-b83b-0c5c74312089	broad_tar_variant_calling
 LIRI-JP::RK010	4a18d29a-298d-4652-b3b5-2f63d2f119f2	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK010	a074b860-e34c-4714-a979-c28496cffd44	normal_RNA_Seq_STAR_bam
 LIRI-JP::RK010	1a85efcd-7037-4716-a25c-3a66d1da27fd	tumor_RNA_Seq_TOPHAT_bam
@@ -8425,9 +8413,6 @@ LIRI-JP::RK019	8c44aabb-d8db-4023-b403-e85c3a2bdd06	normal_wgs_bwa_bam
 LIRI-JP::RK019	57accc2a-d8d6-4440-af63-37279a95069c	tumor_wgs_bwa_bam
 LIRI-JP::RK019	31aa04b0-d300-11e5-b2f2-46585c6878de	sanger_variant_calling
 LIRI-JP::RK019	b05adbee-5a10-4fe5-81bd-b52d97d0bf0f	dkfz_embl_variant_calling
-LIRI-JP::RK019	be60936b-36c0-4e2c-9771-2796f404748d	broad_variant_calling
-LIRI-JP::RK019	111f7a6d-ebe4-4787-a70e-566a92706214	muse_variant_calling
-LIRI-JP::RK019	a998cbfd-1a14-44d6-b94a-de7bffcbbe9f	broad_tar_variant_calling
 LIRI-JP::RK019	15031621-ccae-41c7-bfe1-8b298698042e	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK019	b94c3906-cb23-4caa-8d0b-f93d5588dd94	normal_RNA_Seq_STAR_bam
 LIRI-JP::RK019	798579d6-bdb9-4c0d-a9c5-d005ef7c256e	tumor_RNA_Seq_TOPHAT_bam
@@ -8454,9 +8439,6 @@ LIRI-JP::RK022	c5ed6a1c-3748-4082-883f-2013fd1666f7	normal_wgs_bwa_bam
 LIRI-JP::RK022	63f70f52-16ce-405f-b95e-52f67437589e	tumor_wgs_bwa_bam
 LIRI-JP::RK022	7c3f220c-d301-11e5-b2f2-46585c6878de	sanger_variant_calling
 LIRI-JP::RK022	059446e3-76fc-4e7f-85fd-23df0067d97d	dkfz_embl_variant_calling
-LIRI-JP::RK022	b171cf0e-e1e9-4676-a7cc-e2f7637cff3b	broad_variant_calling
-LIRI-JP::RK022	f4be25e0-c27f-4c59-8d0c-cb1117313ee1	muse_variant_calling
-LIRI-JP::RK022	3a154289-1844-42f5-bf75-dc59ad4dcd29	broad_tar_variant_calling
 LIRI-JP::RK023	d3fc2ffb-14ac-4637-8b59-11c8a28b3a63	normal_wgs_bwa_bam
 LIRI-JP::RK023	3e01ecd5-a959-44d9-a203-613245b9c1ed	tumor_wgs_bwa_bam
 LIRI-JP::RK023	a2d161aa-d301-11e5-b2f2-46585c6878de	sanger_variant_calling
@@ -8740,9 +8722,6 @@ LIRI-JP::RK059	2873b9cc-c45e-4994-a204-1f644106ac9e	normal_wgs_bwa_bam
 LIRI-JP::RK059	e87b238f-aac7-4202-9506-02d6c8ac34c8	tumor_wgs_bwa_bam
 LIRI-JP::RK059	1ed5501c-cf43-11e5-af01-c1258a9203f5	sanger_variant_calling
 LIRI-JP::RK059	2194d953-2cab-4447-a3a0-59adb570c5f8	dkfz_embl_variant_calling
-LIRI-JP::RK059	463c8b1c-f68c-4d42-a193-82c15bac302b	broad_variant_calling
-LIRI-JP::RK059	c0bec34b-11a7-46d0-84b5-22b548b9bec0	muse_variant_calling
-LIRI-JP::RK059	140850bb-73e6-4289-939b-4c6c88b458e6	broad_tar_variant_calling
 LIRI-JP::RK060	ff4818d1-f229-4d8f-8ddd-bd9ac2a912eb	normal_wgs_bwa_bam
 LIRI-JP::RK060	09d3e425-4d9f-44fc-8a98-ea984a4f63d6	tumor_wgs_bwa_bam
 LIRI-JP::RK060	8112a8ec-cea8-11e5-9fb6-e6714d100685	sanger_variant_calling
@@ -9257,9 +9236,6 @@ LIRI-JP::RK133	843cbb44-9c3f-4dca-a4d7-8ddc366e0c7a	normal_wgs_bwa_bam
 LIRI-JP::RK133	90c52284-327b-4c3c-8d5b-eb6002e4c6bb	tumor_wgs_bwa_bam
 LIRI-JP::RK133	023bd08a-cef2-11e5-bedf-af7e4d100685	sanger_variant_calling
 LIRI-JP::RK133	6833e528-3753-480f-8244-80f248d4277e	dkfz_embl_variant_calling
-LIRI-JP::RK133	478a8787-41b9-4f8e-89ab-a5bcfda16048	broad_variant_calling
-LIRI-JP::RK133	b52ae5d6-d5ab-4c50-9147-41af15fcd753	muse_variant_calling
-LIRI-JP::RK133	226fa2b9-f153-4118-b25f-51b8f2363b07	broad_tar_variant_calling
 LIRI-JP::RK134	0d15fc45-e0b2-433f-a691-e7b6002c9267	normal_wgs_bwa_bam
 LIRI-JP::RK134	043421f0-fa2a-4d26-9c48-3595519d5061	tumor_wgs_bwa_bam
 LIRI-JP::RK134	79a57ee2-cf3c-11e5-af01-c1258a9203f5	sanger_variant_calling
@@ -9515,9 +9491,6 @@ LIRI-JP::RK171	3aac58a4-b468-4199-bc52-bdb79bc30f70	normal_wgs_bwa_bam
 LIRI-JP::RK171	8dfc9ddc-6bd9-4f08-b55a-8c7ba66df9d1	tumor_wgs_bwa_bam
 LIRI-JP::RK171	107725a6-ceab-11e5-8519-e6714d100685	sanger_variant_calling
 LIRI-JP::RK171	d6196547-6d9f-414d-862b-74c861672d0c	dkfz_embl_variant_calling
-LIRI-JP::RK171	ab685e76-cd5a-4bb8-80aa-dd2db38e25a1	broad_variant_calling
-LIRI-JP::RK171	6d2a84e0-eb3b-4fd7-b432-ef9ac2e0eb35	muse_variant_calling
-LIRI-JP::RK171	90b63629-3e98-495d-99d0-98919a5c5623	broad_tar_variant_calling
 LIRI-JP::RK172	b29a62a1-9495-453d-be87-9663fff9dcf9	normal_wgs_bwa_bam
 LIRI-JP::RK172	3c02087d-77fe-43f3-b501-0849582107ad	tumor_wgs_bwa_bam
 LIRI-JP::RK172	94ca38cc-d304-11e5-b2f2-46585c6878de	sanger_variant_calling
@@ -9652,9 +9625,6 @@ LIRI-JP::RK196	08eee4a6-eb65-416b-b14f-2733039fbae9	normal_wgs_bwa_bam
 LIRI-JP::RK196	49f140f6-266f-49b9-9bf3-bf968d515fa1	tumor_wgs_bwa_bam
 LIRI-JP::RK196	8dd3987a-cea3-11e5-ad2b-e6714d100685	sanger_variant_calling
 LIRI-JP::RK196	28e8b489-e264-4844-a4cd-d17583e61f1e	dkfz_embl_variant_calling
-LIRI-JP::RK196	5b9d8b8a-065f-474f-b46b-3ed80a355130	broad_variant_calling
-LIRI-JP::RK196	d2bd26e7-507c-4bcb-8bc8-46f093d6a728	muse_variant_calling
-LIRI-JP::RK196	cdbe6025-4c6b-4fb4-bbc3-3344896866b2	broad_tar_variant_calling
 LIRI-JP::RK197	8b2aa027-7c79-4c8a-97da-58de1e8139d9	normal_wgs_bwa_bam
 LIRI-JP::RK197	82d5e3d5-4c51-4679-9ca0-7848887825e1	tumor_wgs_bwa_bam
 LIRI-JP::RK197	ddc43b1e-cea3-11e5-886b-e6714d100685	sanger_variant_calling
@@ -9821,9 +9791,6 @@ LIRI-JP::RK224	60177e78-4f0f-423b-aa2b-b39e7683ef93	normal_wgs_bwa_bam
 LIRI-JP::RK224	36a27510-0cd5-442b-bdbc-dccd55423383	tumor_wgs_bwa_bam
 LIRI-JP::RK224	5335c892-ceac-11e5-b812-e6714d100685	sanger_variant_calling
 LIRI-JP::RK224	a9670c36-6b78-4e84-8572-216f700fd75c	dkfz_embl_variant_calling
-LIRI-JP::RK224	50eeabf1-4714-43cc-b274-1e17e7f3d288	broad_variant_calling
-LIRI-JP::RK224	c354dd31-6f3d-4583-a6d6-12b3b7d19ff7	muse_variant_calling
-LIRI-JP::RK224	d01e4157-d770-4a0e-868f-7f96d80f2b62	broad_tar_variant_calling
 LIRI-JP::RK225	2a7448ae-cb52-4a0e-b9e4-1d3b66e95019	normal_wgs_bwa_bam
 LIRI-JP::RK225	a136df66-49c0-4475-9b90-d12e15dfa959	tumor_wgs_bwa_bam
 LIRI-JP::RK225	96b3d168-ceac-11e5-83cf-e6714d100685	sanger_variant_calling
@@ -9988,9 +9955,6 @@ LIRI-JP::RK263	0b30aada-ddda-4261-8966-affd2ae85331	normal_wgs_bwa_bam
 LIRI-JP::RK263	3282585c-1332-4c05-986a-d2cc4ba24ee3	tumor_wgs_bwa_bam
 LIRI-JP::RK263	996af890-cf3e-11e5-af01-c1258a9203f5	sanger_variant_calling
 LIRI-JP::RK263	bd216419-335c-4fee-aedf-4fca6b8ee7fe	dkfz_embl_variant_calling
-LIRI-JP::RK263	adae7379-dfd7-490d-9baa-3a1cd6036e14	broad_variant_calling
-LIRI-JP::RK263	27208c23-3d44-4bd3-8f93-43f4ac455cac	muse_variant_calling
-LIRI-JP::RK263	d4ce0229-a727-4148-8a72-3ae1266d0752	broad_tar_variant_calling
 LIRI-JP::RK264	0af14767-5f45-4b7d-a8ea-01a86d8fe69c	normal_wgs_bwa_bam
 LIRI-JP::RK264	98f16a46-5b87-4d47-9080-4c600ac61f15	tumor_wgs_bwa_bam
 LIRI-JP::RK264	813e12c4-cf3f-11e5-af01-c1258a9203f5	sanger_variant_calling
@@ -10002,9 +9966,6 @@ LIRI-JP::RK265	fb266ea9-1e55-4bb9-87ec-c416534c24fa	normal_wgs_bwa_bam
 LIRI-JP::RK265	881d084e-95ed-4fa8-a1f0-df2c70d5dc64	tumor_wgs_bwa_bam
 LIRI-JP::RK265	b5211366-cf3f-11e5-af01-c1258a9203f5	sanger_variant_calling
 LIRI-JP::RK265	db4a0156-c13b-40f8-9ef7-ae81ed95050d	dkfz_embl_variant_calling
-LIRI-JP::RK265	09263c90-0ee4-4468-ba53-6a04dcfa1af3	broad_variant_calling
-LIRI-JP::RK265	cbaa2c7b-579b-48c1-ad5e-74c2c0807aaa	muse_variant_calling
-LIRI-JP::RK265	5e1a94fb-4304-4841-bb17-3a4ab9b7db0d	broad_tar_variant_calling
 LIRI-JP::RK266	05b7d900-8fd8-436c-877b-476e360041f4	normal_wgs_bwa_bam
 LIRI-JP::RK266	a92ae9f3-30eb-4577-80ee-9df9c17ff069	tumor_wgs_bwa_bam
 LIRI-JP::RK266	252e56a6-cf3f-11e5-af01-c1258a9203f5	sanger_variant_calling
@@ -10048,9 +10009,6 @@ LIRI-JP::RK272	ce6cf142-48bf-458a-aef5-a435e90da160	normal_wgs_bwa_bam
 LIRI-JP::RK272	017c5d40-a17e-47f5-aa37-229781a24ce1	tumor_wgs_bwa_bam
 LIRI-JP::RK272	4c5f7742-cea8-11e5-9fb6-e6714d100685	sanger_variant_calling
 LIRI-JP::RK272	d8268ed4-e807-4b23-a71c-571d35a7898f	dkfz_embl_variant_calling
-LIRI-JP::RK272	4c97a0f8-a429-4961-b9b3-eb2c25157345	broad_variant_calling
-LIRI-JP::RK272	0e365ba2-1ac4-4eea-a08b-02fbbea0af3d	muse_variant_calling
-LIRI-JP::RK272	8851a1be-af45-4052-8266-ef53c8bfdd09	broad_tar_variant_calling
 LIRI-JP::RK272	1d92b1de-360c-4c16-956e-4e7cc485e3eb	normal_RNA_Seq_TOPHAT_bam
 LIRI-JP::RK272	1cd6109b-6593-4d50-90df-d9ea2de1a4d6	normal_RNA_Seq_STAR_bam
 LIRI-JP::RK272	7f1f4c0e-c99b-4bd6-9237-bd45f2da0e87	tumor_RNA_Seq_TOPHAT_bam
@@ -11916,9 +11874,6 @@ MELA-AU::MELA-0009	750aad6c-0b20-4144-b328-cfce2e67d904	normal_wgs_bwa_bam
 MELA-AU::MELA-0009	4d7ce352-8427-46f7-9dc8-2758b7799877	tumor_wgs_bwa_bam
 MELA-AU::MELA-0009	c6a4b6c0-d2f4-11e5-9065-4a655c6878de	sanger_variant_calling
 MELA-AU::MELA-0009	56b419b8-88db-4a0c-8641-2d351b85abdc	dkfz_embl_variant_calling
-MELA-AU::MELA-0009	2b20eaa4-570d-4e0f-8194-b70e65c4e88f	broad_variant_calling
-MELA-AU::MELA-0009	ddc1f67f-6261-41e7-b95a-42854d426392	muse_variant_calling
-MELA-AU::MELA-0009	7ce42525-17b7-48d3-bccd-29a43c99f90b	broad_tar_variant_calling
 MELA-AU::MELA-0011	b882e3e2-011d-4ee5-9fa2-dad3cd9ef3ee	normal_wgs_bwa_bam
 MELA-AU::MELA-0011	7f3166a8-820a-40c1-9dac-31a399494a86	tumor_wgs_bwa_bam
 MELA-AU::MELA-0011	8e6b0756-d2f3-11e5-9065-4a655c6878de	sanger_variant_calling
@@ -12038,9 +11993,6 @@ MELA-AU::MELA-0067	1fa9958e-d749-4375-aae4-db9086e4a55a	normal_wgs_bwa_bam
 MELA-AU::MELA-0067	a9ab384d-9067-460a-9ed0-50ecd5218c40	tumor_wgs_bwa_bam
 MELA-AU::MELA-0067	75f03fd0-d2f7-11e5-9065-4a655c6878de	sanger_variant_calling
 MELA-AU::MELA-0067	7ae22ea2-c570-481f-b02f-4769ad0fa9a3	dkfz_embl_variant_calling
-MELA-AU::MELA-0067	7147d136-de7a-4c7d-b050-1cdf18d08567	broad_variant_calling
-MELA-AU::MELA-0067	3c036299-d50d-41f2-8828-71f76e671167	muse_variant_calling
-MELA-AU::MELA-0067	9f7c709e-e90d-4f9e-86a7-38c079fbe800	broad_tar_variant_calling
 MELA-AU::MELA-0069	bd757363-1ecc-4349-8e99-8358ba820665	normal_wgs_bwa_bam
 MELA-AU::MELA-0069	0069a93e-6443-4677-8011-d6403c7fccbc	tumor_wgs_bwa_bam
 MELA-AU::MELA-0069	9ae1b09e-d2f7-11e5-9065-4a655c6878de	sanger_variant_calling
@@ -12131,9 +12083,6 @@ MELA-AU::MELA-0183	846c7f4e-d434-4327-8e08-bd63dd6c530d	normal_wgs_bwa_bam
 MELA-AU::MELA-0183	a0929b7d-a374-4685-856d-a52ee6545494	tumor_wgs_bwa_bam
 MELA-AU::MELA-0183	c597b58c-ceb4-11e5-a018-d6714d100685	sanger_variant_calling
 MELA-AU::MELA-0183	e6944b08-d560-4e55-80d5-feca025de215	dkfz_embl_variant_calling
-MELA-AU::MELA-0183	7eb78f1e-548d-4f63-b8d6-5a70cb0102cd	broad_variant_calling
-MELA-AU::MELA-0183	4a84db11-3c2b-4fb4-9714-78d2c24dc05f	muse_variant_calling
-MELA-AU::MELA-0183	fa39bc70-2a56-4e2a-a4f4-8c64e608caf3	broad_tar_variant_calling
 MELA-AU::MELA-0184	ab880367-f593-4ac2-a088-ce1edf689674	normal_wgs_bwa_bam
 MELA-AU::MELA-0184	f972bf58-e6b0-4c17-a191-5c0450d4c860	tumor_wgs_bwa_bam
 MELA-AU::MELA-0184	684faf60-ceb4-11e5-a018-d6714d100685	sanger_variant_calling
@@ -12210,16 +12159,10 @@ MELA-AU::MELA-0213	3cd0799a-5c0a-417d-9c48-3c6fd240652e	normal_wgs_bwa_bam
 MELA-AU::MELA-0213	7d947fa2-eeb3-4a23-9aa7-db97f238c399	tumor_wgs_bwa_bam
 MELA-AU::MELA-0213	d2dc4482-cea6-11e5-ad49-d2714d100685	sanger_variant_calling
 MELA-AU::MELA-0213	b0c9d4a2-3b9d-4e77-99b1-ca16fddc8783	dkfz_embl_variant_calling
-MELA-AU::MELA-0213	b0c3d370-6017-4414-bd6c-22205b579fc3	broad_variant_calling
-MELA-AU::MELA-0213	8d15b25a-b673-4c20-9a3d-499e2b4152f0	muse_variant_calling
-MELA-AU::MELA-0213	33f6dcc0-44bd-405f-b4d2-573a7dad8f62	broad_tar_variant_calling
 MELA-AU::MELA-0223	6e015b71-18b9-45cc-94db-894a65ebe807	normal_wgs_bwa_bam
 MELA-AU::MELA-0223	7f6cb47e-653b-46e2-b920-0367bc34ba4a	tumor_wgs_bwa_bam
 MELA-AU::MELA-0223	22760802-cf2e-11e5-99b6-0ccd899203f5	sanger_variant_calling
 MELA-AU::MELA-0223	b2f3bce2-5c5a-44b2-9f38-cad895519210	dkfz_embl_variant_calling
-MELA-AU::MELA-0223	de18eac1-0db3-4763-b738-131fd144efc7	broad_variant_calling
-MELA-AU::MELA-0223	531c75ae-d012-4a96-9dd6-e12a07c854ee	muse_variant_calling
-MELA-AU::MELA-0223	75d66373-2c68-450c-a7e7-28313f319983	broad_tar_variant_calling
 MELA-AU::MELA-0226	fd7d4b10-df64-4038-884d-4772d233e59e	normal_wgs_bwa_bam
 MELA-AU::MELA-0226	b6d48002-7a52-46c0-92e7-c35157828180	tumor_wgs_bwa_bam
 MELA-AU::MELA-0226	569703d4-cf2e-11e5-99b6-0ccd899203f5	sanger_variant_calling
@@ -13044,9 +12987,6 @@ OV-AU::AOCS-168	05aac9fa-737d-47a7-aeea-9023b8a0ade6	normal_wgs_bwa_bam
 OV-AU::AOCS-168	4b7fae3c-8867-4d4b-971b-0170009b2fcb	tumor_wgs_bwa_bam
 OV-AU::AOCS-168	20b8de5e-d276-11e5-86b3-e3105c6878de	sanger_variant_calling
 OV-AU::AOCS-168	3678247c-d222-4a61-8253-b606cc5374ca	dkfz_embl_variant_calling
-OV-AU::AOCS-168	fb94e916-c670-4773-ac70-f7dfc3c99b97	broad_variant_calling
-OV-AU::AOCS-168	411f78b5-9889-4976-8744-e92970dc831a	muse_variant_calling
-OV-AU::AOCS-168	161e884f-26ef-43f1-b07f-5ec7a36d52f7	broad_tar_variant_calling
 OV-AU::AOCS-168	58866e67-3926-4217-8216-67fed2e3df11	tumor_RNA_Seq_TOPHAT_bam
 OV-AU::AOCS-168	3d4cfd25-68ee-4cf6-84fc-260ed64fd961	tumor_RNA_Seq_STAR_bam
 OV-AU::AOCS-169	972b7916-c3c3-4a82-ac10-a69e01d893d0	normal_wgs_bwa_bam
@@ -14371,9 +14311,6 @@ PACA-CA::PCSI_0077	7654ae6e-4239-4952-a267-286e9d0a5524	normal_wgs_bwa_bam
 PACA-CA::PCSI_0077	4e80a967-22de-4da5-b34e-57e8ed54705b	tumor_wgs_bwa_bam
 PACA-CA::PCSI_0077	64be5c6e-cf33-11e5-999a-d1d7899203f5	sanger_variant_calling
 PACA-CA::PCSI_0077	a86ca57c-533f-40a1-8e45-9b75dd90b334	dkfz_embl_variant_calling
-PACA-CA::PCSI_0077	9061ac37-0a8c-4ff3-bd67-1830d771adac	broad_variant_calling
-PACA-CA::PCSI_0077	52647c95-5f58-4892-892f-8d5ba72bb170	muse_variant_calling
-PACA-CA::PCSI_0077	e840b6ae-0a83-42e9-a4c1-510b4b089917	broad_tar_variant_calling
 PACA-CA::PCSI_0078	c48800e8-c787-463d-89ea-efec776e5d85	normal_wgs_bwa_bam
 PACA-CA::PCSI_0078	47093b88-fa0c-46f9-8dcd-677f778c79d7	tumor_wgs_bwa_bam
 PACA-CA::PCSI_0078	34cefff4-cf33-11e5-b55a-d1d7899203f5	sanger_variant_calling
@@ -14445,9 +14382,6 @@ PACA-CA::PCSI_0104	1eaea9d5-69e6-49ac-8b41-f8cfa7b18e22	normal_wgs_bwa_bam
 PACA-CA::PCSI_0104	0a92037a-e26a-40e7-a908-f718700a5b50	tumor_wgs_bwa_bam
 PACA-CA::PCSI_0104	0b4e1498-cead-11e5-95fa-d5714d100685	sanger_variant_calling
 PACA-CA::PCSI_0104	ba3cd551-40ab-4da4-9270-182f8daee9d1	dkfz_embl_variant_calling
-PACA-CA::PCSI_0104	87b56b29-a9c2-42ec-b2b1-15637863bedb	broad_variant_calling
-PACA-CA::PCSI_0104	8657fee3-4a3b-430e-ac0e-2042aa856099	muse_variant_calling
-PACA-CA::PCSI_0104	7573d746-389a-46ee-a19c-fb9c7eeca89a	broad_tar_variant_calling
 PACA-CA::PCSI_0105	5fbcf00a-42a3-4640-a1e1-d0ed73750c20	normal_wgs_bwa_bam
 PACA-CA::PCSI_0105	be409768-87ae-4e9a-b732-bea996d6773f	tumor_wgs_bwa_bam
 PACA-CA::PCSI_0105	785c1548-d2b4-11e5-9718-a5315c6878de	sanger_variant_calling
@@ -14492,9 +14426,6 @@ PACA-CA::PCSI_0142	d832547f-ec1f-42c4-b21f-4e2d8f7c8c94	normal_wgs_bwa_bam
 PACA-CA::PCSI_0142	6c2d52b9-4158-4f49-97eb-99a2ef9bc054	tumor_wgs_bwa_bam
 PACA-CA::PCSI_0142	d96546c2-cee8-11e5-a13e-ad7e4d100685	sanger_variant_calling
 PACA-CA::PCSI_0142	13972d33-05ec-4499-8b6f-1b53cef7b156	dkfz_embl_variant_calling
-PACA-CA::PCSI_0142	1b1782f0-78a0-459d-a163-0d3f36ebdb7c	broad_variant_calling
-PACA-CA::PCSI_0142	643394cc-5df3-4e2d-bc16-cf1425661725	muse_variant_calling
-PACA-CA::PCSI_0142	378726e1-fa51-47d5-a651-40bb3651fda2	broad_tar_variant_calling
 PACA-CA::PCSI_0145	1d907a0a-67ca-4278-978f-5e2ee4229eec	normal_wgs_bwa_bam
 PACA-CA::PCSI_0145	42716429-b184-4e7a-93ce-d67edcfc3132	tumor_wgs_bwa_bam
 PACA-CA::PCSI_0145	0a0a6f22-d2af-11e5-ae84-35255c6878de	sanger_variant_calling
@@ -14783,9 +14714,6 @@ PACA-CA::PCSI_0302	e19b5ce2-2b89-4501-9b91-2491431b16c4	normal_wgs_bwa_bam
 PACA-CA::PCSI_0302	079754fc-93ae-4796-8c33-bfb022aaaad1	tumor_wgs_bwa_bam
 PACA-CA::PCSI_0302	c38f2150-cf34-11e5-b48c-d1d7899203f5	sanger_variant_calling
 PACA-CA::PCSI_0302	5059b06e-b699-4a6d-9338-7a116838183c	dkfz_embl_variant_calling
-PACA-CA::PCSI_0302	c0421d35-4430-4921-9082-44be2ec34530	broad_variant_calling
-PACA-CA::PCSI_0302	671bd52c-0ddf-43c0-b82d-f9341dba409a	muse_variant_calling
-PACA-CA::PCSI_0302	baca12b6-25dd-41b4-8203-0a642125df9e	broad_tar_variant_calling
 PACA-CA::PCSI_0303	a816a0db-ab0e-4004-9d4d-a2757ee378e5	normal_wgs_bwa_bam
 PACA-CA::PCSI_0303	4f324561-875d-4f6d-b8e4-b1615b28c531	tumor_wgs_bwa_bam
 PACA-CA::PCSI_0303	4423e222-d28e-11e5-b970-35255c6878de	sanger_variant_calling
@@ -15565,9 +15493,6 @@ PAEN-AU::ITNET-0911	336ffddc-0d81-44fd-9423-f5548f0880d0	normal_wgs_bwa_bam
 PAEN-AU::ITNET-0911	d173af19-0ecb-4f50-9253-232871cbdfab	tumor_wgs_bwa_bam
 PAEN-AU::ITNET-0911	f7f2372c-d27a-11e5-b76e-e3105c6878de	sanger_variant_calling
 PAEN-AU::ITNET-0911	985e776d-a7f5-4f5b-89df-ed6947f68c4b	dkfz_embl_variant_calling
-PAEN-AU::ITNET-0911	7449d211-3669-4342-8908-b95c9c2d36b2	broad_variant_calling
-PAEN-AU::ITNET-0911	ae68d2a4-4052-40f5-8e9e-6df5a8917eff	muse_variant_calling
-PAEN-AU::ITNET-0911	57906fdd-270b-42be-90cd-79e78c90b405	broad_tar_variant_calling
 PAEN-AU::ITNET-0935	d0ec4863-e9fd-47a9-8eb6-472a989f2ad8	normal_wgs_bwa_bam
 PAEN-AU::ITNET-0935	39983419-4123-4d2f-a615-6c919d392c8a	tumor_wgs_bwa_bam
 PAEN-AU::ITNET-0935	0548bc08-d30b-11e5-9a07-1f3e5c6878de	sanger_variant_calling
@@ -15579,9 +15504,6 @@ PAEN-AU::ITNET-0938	79249992-1899-4bfb-84c6-52a045e97283	normal_wgs_bwa_bam
 PAEN-AU::ITNET-0938	c3e8147e-5d68-44ac-a8ff-19aea0318009	tumor_wgs_bwa_bam
 PAEN-AU::ITNET-0938	2b62a99e-d30b-11e5-9c84-1f3e5c6878de	sanger_variant_calling
 PAEN-AU::ITNET-0938	fd6cba1e-040e-4d66-89a3-dfc987195b51	dkfz_embl_variant_calling
-PAEN-AU::ITNET-0938	006e7d43-801c-4c2e-8f0e-91a0bace4274	broad_variant_calling
-PAEN-AU::ITNET-0938	1e4eb1da-a465-4b18-a54b-1aec982d7bca	muse_variant_calling
-PAEN-AU::ITNET-0938	677a6940-d7a4-4b1f-a044-fcb9240191d1	broad_tar_variant_calling
 PAEN-AU::ITNET-0941	8ed2568b-1a56-4a11-8723-5e2c7d4f4bf7	normal_wgs_bwa_bam
 PAEN-AU::ITNET-0941	53beac9d-d992-4736-8951-6fd2f24b4399	tumor_wgs_bwa_bam
 PAEN-AU::ITNET-0941	daf7aa2a-d348-11e5-b845-61145c6878de	sanger_variant_calling
@@ -15677,9 +15599,6 @@ PAEN-AU::ITNET-1265	9f132779-3875-4274-af01-1f68a6f450c2	normal_wgs_bwa_bam
 PAEN-AU::ITNET-1265	62a2f17f-f6fb-45a1-aa7d-6e7aeb944dd0	tumor_wgs_bwa_bam
 PAEN-AU::ITNET-1265	a6df0d7e-d27f-11e5-b76e-e3105c6878de	sanger_variant_calling
 PAEN-AU::ITNET-1265	3d5edca4-3497-4316-8f4a-3a3c65fdcadc	dkfz_embl_variant_calling
-PAEN-AU::ITNET-1265	bfa4d529-8b69-460b-94d8-4dc3759d2dbf	broad_variant_calling
-PAEN-AU::ITNET-1265	e0ecd6b3-ffde-4484-aae0-1cce8f219126	muse_variant_calling
-PAEN-AU::ITNET-1265	2f92e638-a0c2-4fb7-a591-db82e99d0f77	broad_tar_variant_calling
 PAEN-AU::ITNET-1266	d384c539-06b9-4bae-88f5-847578f7a645	normal_wgs_bwa_bam
 PAEN-AU::ITNET-1266	00b2b1b5-361f-4467-b2f3-2575ed94576c	tumor_wgs_bwa_bam
 PAEN-AU::ITNET-1266	83241bf4-d27f-11e5-b76e-e3105c6878de	sanger_variant_calling
@@ -15733,9 +15652,6 @@ PAEN-AU::ITNET-1304	0545d4b4-3485-49e4-ac30-2e89c5aa1cd2	normal_wgs_bwa_bam
 PAEN-AU::ITNET-1304	13a6240a-31bf-41e7-abdb-a2f9af7228dd	tumor_wgs_bwa_bam
 PAEN-AU::ITNET-1304	70f95d42-d313-11e5-a6f6-1f3e5c6878de	sanger_variant_calling
 PAEN-AU::ITNET-1304	c9fe4565-31b5-49ab-b3c2-c0f5d9939360	dkfz_embl_variant_calling
-PAEN-AU::ITNET-1304	32328a32-d8c7-4faa-a427-b8d5ad472505	broad_variant_calling
-PAEN-AU::ITNET-1304	ee239288-69f2-4b1f-bc76-31ca744101d6	muse_variant_calling
-PAEN-AU::ITNET-1304	e3c592cf-ec69-427a-afe3-59fa15adc116	broad_tar_variant_calling
 PAEN-AU::ITNET-1308	9a19b7e2-e026-4404-8987-b0f8dbc4af21	normal_wgs_bwa_bam
 PAEN-AU::ITNET-1308	29ffe575-7df0-4b14-b134-385f08fe4aad	tumor_wgs_bwa_bam
 PAEN-AU::ITNET-1308	5393a5b8-d314-11e5-a6f6-1f3e5c6878de	sanger_variant_calling
