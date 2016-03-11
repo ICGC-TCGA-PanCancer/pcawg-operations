@@ -4403,9 +4403,6 @@ EOPC-DE::EOPC-08	f4b4bcff-ecd3-4583-a935-ecad619d0a24	normal_wgs_bwa_bam
 EOPC-DE::EOPC-08	2c57b74c-7312-47e7-8620-b8741a4022d5	tumor_wgs_bwa_bam
 EOPC-DE::EOPC-08	359353a0-d2f2-11e5-9065-4a655c6878de	sanger_variant_calling
 EOPC-DE::EOPC-08	9e9b774b-8d0d-4300-8b29-e49d588148f4	dkfz_embl_variant_calling
-EOPC-DE::EOPC-08	d86c8a81-4e73-415f-83cd-30624d0a0b83	broad_variant_calling
-EOPC-DE::EOPC-08	31b64498-a2b9-44e7-abc0-756b72366d3d	muse_variant_calling
-EOPC-DE::EOPC-08	31d3c99d-a754-4f05-aac5-28bf6d815ff0	broad_tar_variant_calling
 EOPC-DE::EOPC-09	e18d9ad1-91c6-4e47-a8f7-669212bec284	normal_wgs_bwa_bam
 EOPC-DE::EOPC-09	ecb72001-4050-437a-acad-b6d95a90b160	tumor_wgs_bwa_bam
 EOPC-DE::EOPC-09	14fc2842-d2f2-11e5-9065-4a655c6878de	sanger_variant_calling
@@ -15779,9 +15776,6 @@ PAEN-AU::NE-0029	2b942c8a-75cd-4daf-a5f5-c6df37117b0f	normal_wgs_bwa_bam
 PAEN-AU::NE-0029	06274f32-c603-40eb-944d-221624ab1156	tumor_wgs_bwa_bam
 PAEN-AU::NE-0029	27e16c1e-d311-11e5-94e1-1f3e5c6878de	sanger_variant_calling
 PAEN-AU::NE-0029	4750bce3-7dcf-40b4-92e5-768d90c30935	dkfz_embl_variant_calling
-PAEN-AU::NE-0029	51fd073d-9b77-4032-a1fc-86b10cfe9246	broad_variant_calling
-PAEN-AU::NE-0029	ea5688f3-7b1f-4ddd-9a0f-0d1d9fb429b8	muse_variant_calling
-PAEN-AU::NE-0029	7f332b01-b71e-476f-8628-ae2b86bccc9b	broad_tar_variant_calling
 PAEN-AU::NE-0032	678834ac-70b1-4ac9-ab3f-7e909ee51383	normal_wgs_bwa_bam
 PAEN-AU::NE-0032	826f2a7c-e425-499f-9b6d-4cdb4d09e981	tumor_wgs_bwa_bam
 PAEN-AU::NE-0032	483dd324-d30e-11e5-aa8c-1f3e5c6878de	sanger_variant_calling
