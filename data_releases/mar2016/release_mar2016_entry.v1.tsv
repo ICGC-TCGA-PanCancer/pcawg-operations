@@ -10740,6 +10740,7 @@ LUSC-US::4ca13c92-84b4-4edf-842a-b20b7e713415	d74c2e95-5995-453d-8615-7b0cc5fc7c
 LUSC-US::585e6487-b0a3-4828-8a06-46bee01dff74	5cea2ec5-c8b5-4947-9b9c-2b1a6e312f74	normal_wgs_bwa_bam
 LUSC-US::585e6487-b0a3-4828-8a06-46bee01dff74	bb52eee4-8735-46a5-9ce5-2259d0fc7b57	tumor_wgs_bwa_bam
 LUSC-US::585e6487-b0a3-4828-8a06-46bee01dff74	c6a73dd0-cfef-11e5-8340-eaf5899203f5	sanger_variant_calling
+LUSC-US::585e6487-b0a3-4828-8a06-46bee01dff74	055dc5c1-a0f8-4a37-b3cf-9ffb01cf02a1	dkfz_embl_variant_calling
 LUSC-US::585e6487-b0a3-4828-8a06-46bee01dff74	50b29301-5bc5-48ab-b082-c3cbc13fac22	broad_variant_calling
 LUSC-US::585e6487-b0a3-4828-8a06-46bee01dff74	29c3eef6-81ac-4d86-b8c7-54a4ac67b503	muse_variant_calling
 LUSC-US::585e6487-b0a3-4828-8a06-46bee01dff74	148eaf53-f871-4430-8bb3-fe725df43b94	broad_tar_variant_calling
@@ -10807,6 +10808,7 @@ LUSC-US::8e6020a1-68df-4d57-ad4e-33acc0861fb3	3c72d21b-43ee-42ca-b0b6-91281552ee
 LUSC-US::9293e197-e38a-4e19-a7d0-1b45d1ad48bd	ce09e9f2-2fe9-42e6-af0c-71f1a48de75c	normal_wgs_bwa_bam
 LUSC-US::9293e197-e38a-4e19-a7d0-1b45d1ad48bd	2b83be12-0af3-4d92-98d6-7da7da182ad5	tumor_wgs_bwa_bam
 LUSC-US::9293e197-e38a-4e19-a7d0-1b45d1ad48bd	fcaf24d4-d0bb-11e5-9ba7-5c755c6878de	sanger_variant_calling
+LUSC-US::9293e197-e38a-4e19-a7d0-1b45d1ad48bd	4e1f9c16-76af-11e5-91dd-84ed39061ec6	dkfz_embl_variant_calling
 LUSC-US::9293e197-e38a-4e19-a7d0-1b45d1ad48bd	8734a30b-36ae-4ab0-8c8d-70f34016e0c5	broad_variant_calling
 LUSC-US::9293e197-e38a-4e19-a7d0-1b45d1ad48bd	4c277109-7687-49c7-9f12-a2b9381b6f05	muse_variant_calling
 LUSC-US::9293e197-e38a-4e19-a7d0-1b45d1ad48bd	6b573032-75b4-4f3a-8332-d1f49dd5f636	broad_tar_variant_calling
@@ -10824,6 +10826,7 @@ LUSC-US::9a874b64-d0d6-416e-97bc-e9071ed0b16b	ce572166-41cf-45ca-928c-0296ef8870
 LUSC-US::9af6ed4e-8cdc-4f49-84e9-ba1053b5b3ca	1048de21-ba7d-44c2-aa36-fb07577af79c	normal_wgs_bwa_bam
 LUSC-US::9af6ed4e-8cdc-4f49-84e9-ba1053b5b3ca	b5d0d7da-7dc1-4bf5-a5e9-faba326ce945	tumor_wgs_bwa_bam
 LUSC-US::9af6ed4e-8cdc-4f49-84e9-ba1053b5b3ca	4080e170-d4ea-11e5-99ce-cdff5b6878de	sanger_variant_calling
+LUSC-US::9af6ed4e-8cdc-4f49-84e9-ba1053b5b3ca	ed1f6f2c-76ae-11e5-bca4-d9c437e4f0a2	dkfz_embl_variant_calling
 LUSC-US::9af6ed4e-8cdc-4f49-84e9-ba1053b5b3ca	d5b3490a-bed5-45bb-9cba-3ea4301f87d7	broad_variant_calling
 LUSC-US::9af6ed4e-8cdc-4f49-84e9-ba1053b5b3ca	cbd04c28-8ee1-4d81-aa94-e1d6377bdf8a	muse_variant_calling
 LUSC-US::9af6ed4e-8cdc-4f49-84e9-ba1053b5b3ca	74e6a51a-cdfc-404f-9e94-fd28bdf36ad7	broad_tar_variant_calling
@@ -11929,6 +11932,7 @@ MELA-AU::MELA-0050	f9370ebc-ca41-4ddd-8c76-27b07ce463d4	broad_tar_variant_callin
 MELA-AU::MELA-0051	6bb47674-8f2c-4f11-83c3-fad5420ebdf2	normal_wgs_bwa_bam
 MELA-AU::MELA-0051	07a04129-1bdf-42f4-b8e4-21fd23e95a3c	tumor_wgs_bwa_bam
 MELA-AU::MELA-0051	0824b91c-cfdd-11e5-88ce-d4f5899203f5	sanger_variant_calling
+MELA-AU::MELA-0051	3ba97ec1-6bfd-466e-a15b-298b5cd3421b	dkfz_embl_variant_calling
 MELA-AU::MELA-0052	d046a168-4605-4c3d-8922-a072f8e6dfe4	normal_wgs_bwa_bam
 MELA-AU::MELA-0052	c441a864-3c26-4509-b0f8-4e546e9bec32	tumor_wgs_bwa_bam
 MELA-AU::MELA-0052	e336490e-cfdc-11e5-88ce-d4f5899203f5	sanger_variant_calling
