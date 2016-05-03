@@ -2091,7 +2091,6 @@ BRCA-US::993103b1-e5a1-4c33-8629-be53ebc41d64	6f1faac3-5a53-4211-918c-0bdbc32d17
 BRCA-US::9938ce5c-e74e-446e-a932-f096f85cc3b1	df6bd8ac-3e9e-45d2-878b-d3fa22b9ef38	normal_wgs_bwa_bam
 BRCA-US::9938ce5c-e74e-446e-a932-f096f85cc3b1	5b478efe-eeac-42b4-b4a1-8d270f1c9e5a	tumor_wgs_bwa_bam
 BRCA-US::9938ce5c-e74e-446e-a932-f096f85cc3b1	7b4d9f8c-d34b-11e5-8de2-f8135c6878de	sanger_variant_calling
-BRCA-US::9938ce5c-e74e-446e-a932-f096f85cc3b1	20806958-5439-4dc0-ba14-27aa5a81657b	dkfz_embl_variant_calling
 BRCA-US::9938ce5c-e74e-446e-a932-f096f85cc3b1	bc57802e-9a3f-4628-967b-6f68334b1e09	broad_variant_calling
 BRCA-US::9938ce5c-e74e-446e-a932-f096f85cc3b1	92b1e46c-0e39-430c-87c0-bf726364a722	muse_variant_calling
 BRCA-US::9938ce5c-e74e-446e-a932-f096f85cc3b1	d105e8c0-e891-4996-b27e-df44d63a1849	broad_tar_variant_calling
