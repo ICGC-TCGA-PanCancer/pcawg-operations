@@ -21280,4 +21280,4 @@ UCEC-US::ffaa98a0-2b69-46dc-aee5-c5c3f2abbc38	18930c30-429b-487e-84e1-81a13d3aef
 UCEC-US::ffaa98a0-2b69-46dc-aee5-c5c3f2abbc38	486f6143-d271-4508-adf2-e2556ef4e45b	broad_tar_variant_calling
 UCEC-US::ffaa98a0-2b69-46dc-aee5-c5c3f2abbc38	f5e408c1-9ff9-404e-be5b-4035af17aedf	tumor_RNA_Seq_TOPHAT_bam
 UCEC-US::ffaa98a0-2b69-46dc-aee5-c5c3f2abbc38	f0f5a0fc-ff89-4345-a268-60915bf847d7	tumor_RNA_Seq_STAR_bam
-BRCA-US::9938ce5c-e74e-446e-a932-f096f85cc3b1   20806958-5439-4dc0-ba14-27aa5a81657b    dkfz_embl_variant_calling
+BRCA-US::9938ce5c-e74e-446e-a932-f096f85cc3b1	20806958-5439-4dc0-ba14-27aa5a81657b	dkfz_embl_variant_calling
