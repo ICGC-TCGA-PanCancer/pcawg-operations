@@ -23858,11 +23858,8 @@ PRAD-CA::CPCG0233	c1884710-add7-45f3-96a3-22edd32ed91e	broad_variant_calling
 PRAD-CA::CPCG0233	99c744ab-adaa-40ed-9185-32f14a740fdf	muse_variant_calling
 PRAD-CA::CPCG0233	311ebe9c-9165-4adb-8a7e-071979c84836	broad_tar_variant_calling
 PRAD-CA::CPCG0234	7d760975-5d9d-4b60-8cf6-4411ff6c9cf5	normal_wgs_bwa_alignment
-PRAD-CA::CPCG0234	ecb63902-0cc8-11e6-91a0-c293b45e982e	normal_wgs_minibam
 PRAD-CA::CPCG0234	9ac9a1c0-ddd6-4b7e-94a1-6820fc5c6d09	tumor_wgs_bwa_alignment
-PRAD-CA::CPCG0234	ecb63902-0cc8-11e6-91a0-c293b45e982e	tumor_wgs_minibam
 PRAD-CA::CPCG0234	c4ea4dc6-cea9-11e5-a968-d5714d100685	sanger_variant_calling
-PRAD-CA::CPCG0234	f19e2ada-07d0-11e6-87cd-140410b3cecf	dkfz_embl_variant_calling
 PRAD-CA::CPCG0234	70a2902b-4711-40dc-bdd9-b017971d073e	broad_variant_calling
 PRAD-CA::CPCG0234	c5beb831-e9a8-4cc6-a67a-80ad985d5271	muse_variant_calling
 PRAD-CA::CPCG0234	07b29b8f-3f92-4e85-b2e5-d811fd9f4c87	broad_tar_variant_calling
