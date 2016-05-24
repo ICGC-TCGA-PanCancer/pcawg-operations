@@ -1,4 +1,4 @@
-# donor blacklist, copy and paste from google spreadsheet on May 20, 2016
+# donor blacklist, synchronized with google spreadsheet on May 24, 2016
 BOCA-UK::CGP_donor_1397081
 BOCA-UK::CGP_donor_1635843
 BRCA-UK::CGP_donor_1337230
@@ -19,11 +19,7 @@ OV-AU::AOCS-076
 OV-US::15c84da3-16e5-4909-aea9-cb5894b0f8af
 PACA-AU::ICGC_0415
 PACA-AU::ICGC_0503
-PACA-AU::ICGC_0503
 PACA-CA::PCSI_0231
-PACA-CA::PCSI_0231
-PAEN-AU::ICGC_0287
-PAEN-AU::ICGC_0287
 PAEN-AU::ICGC_0287
 PAEN-AU::ITNET-0809
 PAEN-AU::ITNET-0911
