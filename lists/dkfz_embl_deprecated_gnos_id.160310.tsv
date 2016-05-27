@@ -4,3 +4,13 @@ LGG-US	55a67639-ed05-4143-af96-a377bc5489ee	4eded106-153e-495d-8f6c-7e5320595b53
 LGG-US	a5f851c5-6130-4ea1-9f86-be59331a92f7	3f0a948a-5fb9-4e6b-99c4-9ff8dd0224a6
 LGG-US	fc3b7596-f515-446f-81db-fed0154ca2c5	876c0795-c623-42b0-b29a-0e903cc1bfc0
 PRAD-CA	CPCG0206	75967204-79f3-414d-9663-112a6d41a01c
+ESAD-UK::OCCAMS-PS-003	0fda2c0a-935b-4594-bf91-f97ac53bf11e	dkfz_embl_variant_calling
+GBM-US::f5bc5d97-e054-4e53-992d-71b896bd97d5	fcf61180-76ae-11e5-a175-fe630f9e43f8	dkfz_embl_variant_calling
+LIRI-JP::RK165	027d2a1a-6d61-469c-899c-2fa9af4a131b	dkfz_embl_variant_calling
+LIRI-JP::RK254	31b2a69f-8e83-415f-b221-e1ab97c6182a	dkfz_embl_variant_calling
+MALY-DE::4104893	f8d1cf7f-46f6-4387-ab60-7d46af2cff92	dkfz_embl_variant_calling
+MALY-DE::4112512	81de9149-291d-4d40-8180-5896196a9e4e	dkfz_embl_variant_calling
+OV-AU::AOCS-076	0a3c8376-7800-41e4-993a-c890b0ee06ef	dkfz_embl_variant_calling
+OV-AU::AOCS-160	4893f96f-9d4c-40ff-aa30-4e6a2ae93db8	dkfz_embl_variant_calling
+OV-AU::AOCS-165	012f9a1e-34ab-48a5-95d8-87de9cc17ac3	dkfz_embl_variant_calling
+OV-US::15c84da3-16e5-4909-aea9-cb5894b0f8af	2b7f4698-76af-11e5-bd66-ffeaa55b994f	dkfz_embl_variant_calling
