@@ -1,8 +1,1 @@
-# samples blacklist, synchronized with google spreadsheet on June 28, 2016
-# https://docs.google.com/spreadsheets/d/1WItwkEEjMhWLpNhjiEneFl46ZuEqto26_MXSTUG5fhE/edit#gid=1947716529
-#tumor_wgs_aliquot_id
-f90c3f1d-5788-234d-e040-11ac0c483423
-f8f13b7f-262e-696a-e040-11ac0d483093
-f935c981-4aef-d6a4-e040-11ac0c481062
-f93a6c0a-d43e-06c7-e040-11ac0c480731
-0bfe2ac9-0af1-c248-e050-11ac0d487e1c
+pc_annotation-aliquot_blacklist.20160628.tsv
