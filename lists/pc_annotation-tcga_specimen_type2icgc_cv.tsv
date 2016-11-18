@@ -1,0 +1,20 @@
+TCGA Specimen Types	New ICGC Specimen Type Controlled Terms
+Solid Tissue Normal	Normal - solid tissue
+Blood Derived Normal	Normal - blood derived
+Bone Marrow Normal	Normal - bone marrow
+Buccal Cell Normal	Normal - buccal cell
+EBV Immortalized Normal	Normal - EBV immortalized
+Primary solid Tumor	Primary tumour - solid tissue
+Primary Blood Derived Cancer - Peripheral Blood	Primary tumour - blood derived (peripheral blood)
+Primary Blood Derived Cancer - Bone Marrow	Primary tumour - blood derived (bone marrow)
+Additional - New Primary	Primary tumour - additional new primary
+Primary Tumor	Primary tumour - other
+Recurrent Solid Tumor	Recurrent tumour - solid tissue
+Recurrent Blood Derived Cancer - Peripheral Blood	Recurrent tumour - blood derived (peripheral blood)
+Recurrent Blood Derived Cancer - Bone Marrow	Recurrent tumour - blood derived (bone marrow)
+Recurrent Tumor	Recurrent tumour - other
+Metastatic	Metastatic tumour - NOS
+Additional Metastatic	Metastatic tumour - additional metastatic
+Primary Xenograft Tissue	Xenograft - derived from primary tumour
+Cell Line Derived Xenograft Tissue	Xenograft - derived from tumour cell line
+Cell Lines	Cell line - derived from tumour
